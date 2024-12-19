@@ -42,7 +42,7 @@ li{
 
 header{
     display: flex;
-    background-color: rgb(255, 230, 230);
+    /* background-color: rgb(255, 230, 230); */
 }
 
 .header-left{
