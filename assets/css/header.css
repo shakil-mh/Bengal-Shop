@@ -28,7 +28,6 @@ header{
     align-items: center;
     width: 405px;
     height: 60px;
-    cursor: pointer;
 }
 
 .header-left button img{
@@ -179,12 +178,18 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.25rem;
-    color: #FF5C00;
-    gap: 10px;
-    font-weight: 500;
 }
 
-.offers:hover{
+.offers a{
+    color: #FF5C00;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.offers a:hover{
     text-decoration: underline;
 }
