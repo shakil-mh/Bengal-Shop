@@ -145,7 +145,7 @@ header{
     right: 0;
     width: 20px;
     aspect-ratio: 1;
-    background-color: #FF5C00;
+    background-color: var(--text-color-2);
     border-radius: 100px;
     color: white;
     display: flex;
@@ -181,7 +181,7 @@ header{
 }
 
 .offers a{
-    color: #FF5C00;
+    color: var(--text-color-2);
     font-size: 20px;
     font-weight: 500;
     display: flex;

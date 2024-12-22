@@ -26,7 +26,7 @@
 
 .carousel-text h1{
     font-size: 70px;
-    color: #333333;
+    color: var(--text-color);
     line-height: 90px;
     /* line-height: 87.5px; */
     margin-bottom: 5px;
@@ -86,8 +86,8 @@
 }
 
 .current-slide{
-    background-color: #ff5c00 !important;
+    background-color: var(--text-color-2) !important;
     box-shadow: 
     0 0 0 2.5px white,
-    0 0 0 3px #ff5c00;
+    0 0 0 3px var(--text-color-2);
 }
