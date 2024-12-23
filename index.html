@@ -92,15 +92,15 @@
             <div class="category-tittle">
                 <h3>Search by Category</h3>
                 <div class="category-btn">
-                    <button class="category-left-btn">
+                    <button class="category-left-btn" onclick="scrollCategory(0)">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
-                    <button class="category-right-btn category-btn-active">
+                    <button class="category-right-btn category-btn-active" onclick="scrollCategory(1)">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
-            <div class="category-items">
+            <div class="category-items" onscroll="categoryBtnCtrl()">
                 <div class="category-slide category-slide-1">
                     <img src="assets/images/category-slider/002-fashion-1.png" alt="" srcset="">
                     <h4>Groceries</h4>
@@ -171,7 +171,7 @@
         </div>
     </section>
 
-
     <script src="https://kit.fontawesome.com/746bd87ac3.js" crossorigin="anonymous"></script>
+    <script src="assets/js/category.js"></script>
 </body>
 </html>
