@@ -1,7 +1,6 @@
 header{
     display: flex;
-    /* background-color: rgb(255, 230, 230); */
-    padding-bottom: 30px !important;
+    padding: 40px;
 }
 
 .header-left{
@@ -19,7 +18,6 @@ header{
 .header-left button{
     font-size: var(--font-size);
     padding: 15px 23px;
-    border: none;
     background-color: var(--green-color);
     border-radius: 100px;
     color: white;
@@ -84,7 +82,6 @@ header{
     right: 5px;
     bottom: 5px;
     width: 145px;
-    border: none;
     border-radius: 100px;
     font-size: var(--font-size);
     background-color: var(--deep-gray-color);
@@ -107,7 +104,6 @@ header{
     color: var(--deep-gray-color);
     padding-bottom: 14px;
     transition: color var(--transition) ease-in-out;
-    border: none;
     background: transparent;
     display: flex;
 }

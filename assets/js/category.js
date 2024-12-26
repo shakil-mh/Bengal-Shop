@@ -1,10 +1,11 @@
-const categoryContainer = document.getElementsByClassName("category-container")[0];
-const slider = categoryContainer.getElementsByClassName("category-items")[0];
-const categoryLeftButton = categoryContainer.getElementsByClassName("category-left-btn")[0];
-const categoryRightButton = categoryContainer.getElementsByClassName("category-right-btn")[0];
+// const categoryArea = document.getElementsByClassName("category-area")[0];
+// const sliderLeftButton = categoryArea.getElementsByClassName("slider-btn-left")[0];
+// const sliderRightButton = categoryArea.getElementsByClassName("slider-btn-right")[0];
 
-scrollCategory = (index) => {
-    const scrollAmount = 300;
+sliderControl = (index, button) => {
+    const scrollAmount = 600;
+    const targetArea = button.parentElement.parentElement.parentElement;
+    const slider = targetArea.getElementsByClassName("slider")[0];
     
     if(index===0){
         slider.scrollLeft -= scrollAmount;
@@ -16,18 +17,23 @@ scrollCategory = (index) => {
 }
 
 
-categoryBtnCtrl = () =>{
+sliderBtnCtrl = (slider) =>{
+
+    const sliderLeftButton = slider.previousElementSibling.getElementsByClassName("slider-btn-left")[0];
+    const sliderRightButton = slider.previousElementSibling.getElementsByClassName("slider-btn-right")[0];
+
+    const currentSliderWidth = slider.clientWidth;
 
     if(slider.scrollLeft === 0){
-        categoryLeftButton.classList.remove("category-btn-active");
+        sliderLeftButton.classList.remove("slider-btn-active");
     }
 
-    else if(slider.scrollLeft + 1710 === slider.scrollWidth){
-        categoryRightButton.classList.remove("category-btn-active");
+    else if(slider.scrollLeft + currentSliderWidth === slider.scrollWidth){
+        sliderRightButton.classList.remove("slider-btn-active");
     }
     
     else{
-        categoryLeftButton.classList.add("category-btn-active");
-        categoryRightButton.classList.add("category-btn-active");
+        sliderLeftButton.classList.add("slider-btn-active");
+        sliderRightButton.classList.add("slider-btn-active");
     }
 }

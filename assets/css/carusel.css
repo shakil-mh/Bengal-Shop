@@ -28,7 +28,6 @@
     font-size: 70px;
     color: var(--text-color);
     line-height: 90px;
-    /* line-height: 87.5px; */
     margin-bottom: 5px;
 }
 
@@ -46,7 +45,6 @@
     border-radius: 100px;
     background-color: var(--green-color);
     color: white;
-    border: none;
     font-size: 18px;
     transition: background-color var(--transition) ease-in-out;
 }
@@ -62,7 +60,7 @@
     position: relative;
 }
 
-.slider{
+.carousel-slider{
     display: flex;
     align-items: flex-end;
 }

@@ -28,6 +28,7 @@ li{
 
 button{
     cursor: pointer;
+    border: none;
 }
 
 :root{
@@ -53,6 +54,4 @@ button{
 
 .container{
     max-width: 1920px;
-    padding: 40px;
 }
-
