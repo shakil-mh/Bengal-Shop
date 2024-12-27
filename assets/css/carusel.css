@@ -2,9 +2,10 @@
     margin: 0 50px;
     background-color: #EBFAEB;
     max-width: 1820px;
-    height: 878px;
+    min-height: 878px;
     border-radius: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .carousel-text{
