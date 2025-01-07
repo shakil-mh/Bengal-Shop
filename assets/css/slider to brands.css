@@ -81,7 +81,6 @@
 /* Category section */
 
 .category-area{
-    margin: 100px 105px;
     margin-block-end: 60px;
 }
 
@@ -113,7 +112,7 @@
 
 /* Offers Section */
 
-.offers-container{
+.offers-area{
     display: flex;
     gap: 30px;
     margin: 0 105px;
@@ -122,6 +121,10 @@
 
 .offer{
     position: relative;
+}
+
+.offer img{
+    width: 100%;
 }
 
 .offer-text{

@@ -1,0 +1,155 @@
+
+@media (max-width: 1729px){
+
+    /* html, body{
+        font-size: 90%;
+    } */
+
+    .container{
+        margin-inline: clamp(10px, 1vw, 1rem);
+    }
+
+    /* header */
+
+    header{
+        padding: 1rem 2rem;
+        row-gap: .3125rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "l l l l o o o o a a a a"
+        "c c c c s s s s s s s m" ;
+    }
+    
+    header.container{
+        margin: 0 auto;
+    }
+
+    .search-area{
+        justify-self: center;
+    }
+
+    .search-area form input{
+        padding-right: clamp(75px, 22%, 9.6875rem);
+    }
+
+
+    .user-btn{
+        margin: 0 0 0 .625rem;
+    }
+
+    .menu-area{
+        justify-self: end;
+        align-self: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu_btn{
+        display: flex;
+    }
+
+    .special-offers{
+        justify-content: center;
+    }
+    
+
+    /* carousel area */
+
+    .carousel-area{
+        min-height: auto;
+    }
+
+    .carousel-text h1{
+        font-size: 3rem;
+    }
+
+}
+
+
+@media (max-width: 1079px){
+
+    html, body{
+        font-size: 70%;
+    }
+
+    /* header */
+
+    header{
+        padding: .5rem 1rem;
+    }
+
+    .search-area form input{
+        padding-right: clamp(75px, 19%, 9.6875rem);
+    }
+
+    .account-area span{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 719px){
+
+    .main-container{
+        max-width: 500px;
+    }
+    
+    h1{
+        font-size: 36px;
+    }
+
+    /* header */
+
+    header{
+        grid-template-areas: 
+        "l l l l l l . . a a a a"
+        "s s s s s s s s s s s m"
+        "c c c c c c o o o o o o" ;
+    }
+
+    .search-area form input{
+        width: clamp(250px, 70vw, 400px);
+    }
+
+    .category-btn button{
+        width: auto;
+        justify-self: center;
+    }
+
+    .category-btn button img{
+        display: none;
+    }
+
+    .special-offers a{
+        gap: .3125rem;
+    }
+
+
+    /* carousel area */
+
+    .carousel-area{
+        flex-direction: column-reverse;
+    }
+
+    .carousel-text{
+        justify-content: center;
+    }
+
+    .carousel-slider{
+        order: 2;
+        justify-content: center;
+    }
+
+    .carousel-slider img{
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .carousel-nav{
+        margin: 0 auto;
+        flex-direction: row;
+        margin-block: -1.5rem 2rem;
+    }
+}

@@ -10,89 +10,95 @@
     <link rel="stylesheet" href="assets/css/carusel.css">
     <link rel="stylesheet" href="assets/css/slider to brands.css">
     <link rel="stylesheet" href="assets/css/collection to footer.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     
     <title>Home | Bengal Shop</title>
 </head>
 <body>
-   <div class="container">
-        <header>
-            <div class="header-left">
-            <a href="index.html"><img src="assets/images/ui/logo.png" alt="Bengal Shop Logo"></a>
+   <div class="main-container">
+        <header class="container">
+            <a class="logo" href="index.html"><img src="assets/images/ui/logo.png" alt="Bengal Shop Logo"></a>
+
+            <div class="search-area">
+                <form action="">
+                    <img src="assets/images/ui/search.png">
+                    <input type="search" name="s" placeholder="Search here.......">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="account-area">
+                <div class="heart-btn btn"> 
+                    <img src="assets/images/ui/heart.png" alt="whitelist">
+                </div>
+                <div class="cart-btn btn">
+                    <span>1</span>
+                    <div class="cart-logo">
+                        <img src="assets/images/ui/cart.png" alt="cart">
+                    </div>
+                </div>
+
+                <div class="user-btn btn">
+                    <img src="assets/images/ui/user.png" alt="user">
+                </div>
+                <span>Account</span>
+            </div>
+
+            <div class="category-btn">
                 <button>
                     <img src="assets/images/ui/menu-right.png">
-                    <span>All Catagories</span>
+                    <span>All Categories</span>
                     <img src="assets/images/ui/chevron-down.png">
                 </button>
             </div>
-
-            <div class="header-middle">
-                <div class="search-area">
-                    <form action="">
-                        <img src="assets/images/ui/search.png">
-                        <input type="search" name="s" placeholder="Search here.......">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="menu-area">
+           
+            <div class="menu-area">
+                <nav>
                     <button class="active">Home <img src="assets/images/ui/caret-down.png"></button>
                     <button>Shop<img src="assets/images/ui/caret-down.png"></button>
                     <button>Pages<img src="assets/images/ui/caret-down.png"></button>
                     <button>Blogs<img src="assets/images/ui/caret-down.png"></button>
                     <button>Contact</button>
                     <button>Track Order</button>
+                </nav>
+                <div class="menu_btn btn" onclick="showMenu()">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
                 </div>
             </div>
-
-            <div class="header-right">
-                <div class="account-area">
-                    <div class="heart-btn btn"> 
-                        <img src="assets/images/ui/heart.png" alt="whitelist">
-                    </div>
-                    <div class="cart-btn btn">
-                        <span>1</span>
-                        <div class="cart-logo">
-                            <img src="assets/images/ui/cart.png" alt="cart">
-                        </div>
-                        
-                    </div>
-
-                    <div class="user-btn btn">
-                        <img src="assets/images/ui/user.png" alt="user">
-                    </div>
-
-                    <span>Account</span>
-                </div>
-                <div class="offers" href="">
-                    <a href="">
-                        <img src="assets/images/ui/percentage.png">
-                        Special Offers!
-                    </a>
-                </div>
+            
+            <div class="special-offers">
+                <a href="">
+                    <img src="assets/images/ui/percentage.png">
+                    Special Offers!
+                </a>
             </div>
+
         </header>
 
-        <section class="carousel-area">
+        <section class="carousel-area container">
             <div class="carousel-text">
-                <h2>Save up 30% off</h2>
-                <h1>Bengal Vegetable <br> Farm &nbsp;Organic 100%</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vehicula faucibus massa est elit maecenas.</p>
-                <button>Shop Now</button>
-            </div>
-            <div class="carousel">
-                <div class="carousel-slider">
-                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
-                    <img src="assets/images/slide-0.png" alt="">
-                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
-                </div>
-                <div class="carousel-nav">
-                    <a href=""></a>
-                    <a class="current-slide" href=""></a>
-                    <a href=""></a>
+                <div class="carousel-text-wrapper">
+                    <h2>Save up 30% off</h2>
+                    <h1>Bengal Vegetable <br> Farm &nbsp;Organic 100%</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula faucibus massa est elit maecenas.</p>
+                    <button>Shop Now</button>
                 </div>
             </div>
-        </section>
+            <div class="carousel-slider">
+                <!-- <img src="assets/images/slide-1.png" alt=""> -->
+                <img src="assets/images/slide-0.png" alt="">
+                <!-- <img src="assets/images/slide-1.png" alt=""> -->
+            </div>
+            <div class="carousel-nav">
+                <a href=""></a>
+                <a class="current-slide" href=""></a>
+                <a href=""></a>
+            </div>
+        </section>`
 
-        <section class="category-area">
+        <!-- <section class="category-area container">
             <div class="slider-tittle">
                 <h3>Search by Category</h3>
                 <div class="slider-btn">
@@ -154,9 +160,9 @@
                     <h4>Ice Cream</h4>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="offers-container">
+        <!-- <section class="offers-area">
             <div class="offer">
                 <img src="assets/images/offer-1.png" alt="">
                 <div class="offer-text">
@@ -173,9 +179,9 @@
                     <button>Order Now</button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="deal-area">
+        <!-- <section class="deal-area">
             <div class="slider-tittle">
                 <h3>Deals of the Week</h3>
                 <div class="slider-btn">
@@ -409,9 +415,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="brands-area">
+        <!-- <section class="brands-area">
             <div class="slider-tittle">
                 <h3>Popular Brands</h3>
                 <div class="slider-btn">
@@ -461,9 +467,9 @@
                     <img src="assets/images/brand-6.png" alt="Brand Logo">
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="collection-area">
+        <!-- <section class="collection-area">
             <div class="collection collection-1">
                 <div class="collection-details">
                     <h3>Fresh Fruits Collection</h3>
@@ -491,9 +497,9 @@
                 </div>
                 <img src="assets/images/collection-3.png" alt="">
             </div>
-        </section>
+        </section> -->
 
-        <section class="support-area">
+        <!-- <section class="support-area">
             <div class="support-tile">
                 <img src="assets/images/ui/support-1.png" alt="">
                 <div class="support-tile-details">
@@ -522,9 +528,9 @@
                     <p>Contact us 24 hours</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <footer>
+        <!-- <footer>
             <div class="footer-top">
                 <div class="footer-top-details">
                     <div>
@@ -572,7 +578,7 @@
                     <a href=""><img src="assets/images/ui/google-pay.png" alt=""></a>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
    </div>
 

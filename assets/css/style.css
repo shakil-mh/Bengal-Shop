@@ -18,6 +18,11 @@ html {
     scrollbar-width: none;  /* Firefox */
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 a{
     text-decoration: none;
 }
@@ -43,7 +48,7 @@ button{
 }
 
 .btn{
-    width: 60px;
+    width: 3.75rem;
     aspect-ratio: 1;
     border-radius: 100px;
     display: flex;
@@ -52,7 +57,13 @@ button{
     cursor: pointer;
 }
 
-.container{
+.main-container{
     max-width: 1920px;
     margin: 0 auto;
+}
+
+.container{
+    max-width: 1710px;
+    margin: 0 auto;
+    margin-bottom: 6.25rem;
 }

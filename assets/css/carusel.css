@@ -1,84 +1,79 @@
 .carousel-area{
-    margin: 0 50px;
     background-color: #EBFAEB;
-    max-width: 1820px;
+    max-width: 113.75rem;
     min-height: 878px;
     border-radius: 30px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .carousel-text{
-    max-width: 976px;
+    flex-basis: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
-    gap: 20px;
-    flex-grow: 1;
+    justify-content: end;
+    align-items: center;
+    padding-left: 2rem;
 }
 
-.carousel-text h2{
+.carousel-text-wrapper h2{
     color: var(--green-color);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 41px;
+    margin-bottom: 15px;
 }
 
-.carousel-text h1{
-    font-size: 70px;
+.carousel-text-wrapper h1{
+    font-size: 4.375rem;
     color: var(--text-color);
-    line-height: 90px;
-    margin-bottom: 5px;
+    margin-bottom: 1.875rem;
+    line-height: 1.3;
 }
 
-.carousel-text p{
-    font-size: 22px;
+.carousel-text-wrapper p{
+    font-size: 1.375rem;
     color: var(--deep-gray-color);
     font-weight: 500;
-    line-height: 36px;
-    margin-bottom: 28px;
+    line-height: 2.25rem;
+    margin-bottom: 2.5rem;
 }
 
-.carousel-text button{
-    height: 60px;
-    width: 200px;
+.carousel-text-wrapper button{
+    height: 3.75rem;
+    width: 12.5rem;
     border-radius: 100px;
     background-color: var(--green-color);
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: background-color var(--transition) ease-in-out;
 }
 
-.carousel-text button:hover{
+.carousel-text-wrapper button:hover{
     background-color: var(--deep-gray-color);
-}
-
-.carousel{
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
 }
 
 .carousel-slider{
     display: flex;
     align-items: flex-end;
+    flex-basis: 40%;
+}
+
+.carousel-slider img{
+    width: clamp(250px, 40vw, 100%);
+    margin: 3.75rem 3.75rem 0 3.75rem;
 }
 
 .carousel-nav{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 11px;
-    right: 83px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+    gap: .6875rem;
+    margin-left: auto;
 }
 
 .carousel-nav a{
     display: block;
-    width: 14px;
+    width: .875rem;
     aspect-ratio: 1;
     border-radius: 100px;
     background-color: #d3ddd3;
@@ -87,6 +82,6 @@
 .current-slide{
     background-color: var(--text-color-2) !important;
     box-shadow: 
-    0 0 0 2.5px white,
-    0 0 0 3px var(--text-color-2);
+    0 0 0 .1563rem white,
+    0 0 0 .1875rem var(--text-color-2);
 }
