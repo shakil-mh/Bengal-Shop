@@ -160,7 +160,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .3125rem;
+    gap: 5px;
     padding: .1875rem;
     border-radius: .3rem;
 }
