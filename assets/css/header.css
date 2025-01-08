@@ -79,7 +79,11 @@ header{
     grid-area: a;
     align-items: center;
     justify-self: end;
-    /* margin-bottom: 2.5rem; */
+}
+
+.account-area i{
+    font-size: 1.45rem;
+    color: var(--deep-gray-color);
 }
 
 .cart-btn{
@@ -93,12 +97,12 @@ header{
     width: 1.25rem;
     aspect-ratio: 1;
     background-color: var(--text-color-2);
-    border-radius: 6.25rem;
+    border-radius: 100px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .cart-logo{

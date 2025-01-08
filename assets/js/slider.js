@@ -3,9 +3,9 @@
 // const sliderRightButton = categoryArea.getElementsByClassName("slider-btn-right")[0];
 
 sliderControl = (index, button) => {
-    const scrollAmount = 600;
     const targetArea = button.parentElement.parentElement.parentElement;
     const slider = targetArea.getElementsByClassName("slider")[0];
+    const scrollAmount = slider.getElementsByClassName("slide")[0].offsetWidth * 2.5;
     
     if(index===0){
         slider.scrollLeft -= scrollAmount;

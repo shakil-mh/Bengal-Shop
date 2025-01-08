@@ -87,7 +87,7 @@
         padding-right: clamp(75px, 19%, 9.6875rem);
     }
 
-    .account-area span{
+    .account-area > span{
         display: none;
     }
 
@@ -106,6 +106,10 @@
     
     h2{
         font-size: 1.8rem !important;
+    }
+    
+    h3{
+        font-size: 1.7rem !important;
     }
 
     /* header */
@@ -134,15 +138,6 @@
         bottom: .125rem;
     }
 
-    .category-btn button{
-        width: auto;
-        justify-self: center;
-    }
-
-    .category-btn button img{
-        display: none;
-    }
-
     .special-offers a{
         gap: .3125rem;
     }
@@ -153,6 +148,7 @@
     .carousel-area{
         flex-direction: column-reverse;
         border-radius: 1rem;
+        margin-bottom: 2.5rem;
     }
 
     .carousel-text{
@@ -178,3 +174,27 @@
         flex-direction: row;
         margin-block: -1.5rem 2rem;
     }
+    
+
+    /* Category area */
+    
+    .category-area{
+        margin-block-end: .625rem;
+    }
+
+    .category-btn button{
+        width: auto;
+        justify-self: center;
+    }
+
+    .category-btn button img{
+        display: none;
+    }
+
+    .category-slide img{
+        width: 80%;
+        padding: 0;
+    }
+
+
+}

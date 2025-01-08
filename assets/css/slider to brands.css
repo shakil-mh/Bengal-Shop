@@ -17,6 +17,7 @@
 
 .slider::-webkit-scrollbar-track {
     background: #e0e0e0;
+    border-radius: 10px;
     box-shadow: inset 0 0 0 1px white;
 }
 
@@ -28,17 +29,18 @@
 
 .slider-btn{
     display: flex;
-    gap: 15px;
+    gap: .9375rem;
+    align-items: end;
 }
 
 .slider-btn button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 52px;
-    height: 52px;
+    width: 3.25rem;
+    height: 3.25rem;
     border-radius: 100px;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 300;
     background: var(--light-gray-color);
     color: #a4a4a4;
@@ -52,11 +54,11 @@
 .slider-tittle{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .slider-tittle h3{
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--text-color);
     font-weight: 600;
 }
@@ -81,21 +83,26 @@
 /* Category section */
 
 .category-area{
-    margin-block-end: 60px;
+    margin-block-end: 3.75rem;
 }
 
 .category-slider{
-    padding: 40px 0;
-    gap: 30px;
+    padding: 2.5rem 0;
+    gap: 1.875rem;
 }
 
 .category-slide{
-    width: 260px;
-    height: 220px;
-    padding: 35px;
+    aspect-ratio: 260/220;
+    gap: 1.25rem;
+    padding-inline: clamp(10px, 2.3vw, 45px);
+    padding-block: clamp(5px, 2.3vw, 35px);
     background: #f7f7f7;
     border: 1px solid var(--light-gray-color);
     cursor: pointer;
+}
+
+.category-slide img{
+    padding-inline: clamp(15px, 1.8vw, 35px);
 }
 
 .category-slide:hover{
@@ -103,7 +110,7 @@
 }
 
 .category-slide h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
