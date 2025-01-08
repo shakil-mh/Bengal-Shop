@@ -196,5 +196,12 @@
         padding: 0;
     }
 
+    /* Offers area */
+
+    .offers-area{
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    }
+
 
 }
