@@ -78,8 +78,6 @@
 }
 
 
-
-
 /* Category section */
 
 .category-area{
@@ -149,6 +147,7 @@
     font-size: clamp(20px, 2.4vw, 46px);
     color: var(--text-color);
     margin-bottom: 18%;
+    color-scheme: only dark;
 }
 
 .offer-text button{

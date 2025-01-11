@@ -1,17 +1,13 @@
 
 @media (max-width: 1729px){
 
-    /* html, body{
-        font-size: 90%;
-    } */
-
     .container{
         margin-inline: clamp(10px, 1vw, 1rem);
     }
 
     /* header */
 
-    header{
+    .header{
         padding: 1rem 2rem;
         row-gap: .3125rem;
         grid-template-columns: repeat(12, 1fr);
@@ -19,9 +15,15 @@
         "l l l l o o o o a a a a"
         "c c c c s s s s s s s m" ;
     }
+
+    .sticky .header{
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-areas: 
+        "l l l l l l l l l l l l a a a a a a a a a a a m";
+    }
     
-    header.container{
-        margin: 0 auto;
+    .header.container{
+        margin-inline: auto;
     }
 
     .search-area{
@@ -33,7 +35,7 @@
     }
 
     .user-btn{
-        margin: 0 0 0 .625rem;
+        margin-inline: .625rem;
     }
 
     .menu-area{
@@ -79,8 +81,14 @@
 
     /* header */
 
-    header{
+    .header{
         padding: .5rem 1rem;
+    }
+
+    .sticky .header{
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-areas: 
+        "l l l l l l l . . . . . . . . . . . . a a a a m";
     }
 
     .search-area form input{
@@ -112,14 +120,28 @@
         font-size: 1.7rem !important;
     }
 
+    .btn{
+        width: 3rem;
+    }
+
     /* header */
 
     header{
         margin-bottom: 1rem !important;
+    }
+
+    .header{
+        max-width: 500px;
         grid-template-areas: 
         "l l l l l l . . a a a a"
         "s s s s s s s s s s s m"
         "c c c c c c o o o o o o" ;
+    }
+
+    .sticky .header{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "l l l l . . a a a a a m";
+        /* padding-block: .625rem; */
     }
 
     .search-area form img{

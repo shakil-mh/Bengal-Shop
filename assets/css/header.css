@@ -1,8 +1,11 @@
 header{
+}
+
+.header{
     display: grid;
     grid-template-columns: repeat(24, 1fr);
-    row-gap: 16px;
-    padding: 40px 0 30px 0;
+    row-gap: 1rem;
+    padding: 2.5rem 0 1.875rem 0;
     grid-template-areas: 
     "l l l l l . . s s s s s s s s s s s . a a a a a"
     "c c c c c . . m m m m m m m m m m m . o o o o o"
@@ -12,7 +15,34 @@ header{
 .logo{
     grid-area: l;
     align-self: center;
+    min-width: 150px;
 }
+
+    /* Sticky header area */
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    background: white;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform .5s ease-in-out,
+                opacity .5s ease-in-out;
+}
+
+.sticking{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.sticky .header{
+    grid-template-areas: "l l l l l . . m m m m m m m m m m m . a a a a a";
+    padding-block: .625rem;
+}
+
 
     /* search area */
 

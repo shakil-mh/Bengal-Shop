@@ -18,6 +18,10 @@ html {
     scrollbar-width: none;  /* Firefox */
 }
 
+html, body{
+    min-width: 320px;
+}
+
 img{
     display: block;
     max-width: 100%;
@@ -57,12 +61,12 @@ button{
     cursor: pointer;
 }
 
-.main-container{
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
 .container{
     max-width: 1710px;
-    margin: 0 auto;
+    margin-inline: auto;
+}
+
+.main-container{
+    max-width: 1920px;
+    margin-inline: auto;
 }
