@@ -91,6 +91,12 @@
         margin-bottom: 1.25rem;
     }
 
+    /* Collection area */
+
+    .collection-area{
+    margin-bottom: 2.8125rem;
+    }
+
 }
 
 
@@ -126,6 +132,11 @@
     padding-inline: clamp(5px, 15%, 75px);
     }
 
+    /* collection area */
+
+    .collection h3{
+    font-size: clamp(18px, 2.5vw, 32px);
+    }
 
 
 }
@@ -253,9 +264,20 @@
     margin-bottom: 2.5rem;
     }
 
-    /* deal area */
+    /* collection area */
 
+    .collection-area{
+        gap: .4375rem;
+        /* flex-wrap: wrap; */
+    }
 
+    .collection{
+        flex-direction: column-reverse;
+    }
+
+    .collection-details h3{
+    font-size: clamp(14px, 2.79vw, 20px) !important;
+}
 
 
 }

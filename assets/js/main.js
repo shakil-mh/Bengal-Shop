@@ -31,4 +31,9 @@ const dealSlide = dealSlider.innerHTML;
 
 dealSlider.innerHTML += dealSlide
 
-// 
+//  Brands section
+
+let brandsSlider = document.getElementsByClassName("brands-slider")[0];
+const brandsSlide = brandsSlider.innerHTML;
+
+brandsSlider.innerHTML += brandsSlide

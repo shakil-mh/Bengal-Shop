@@ -52,7 +52,7 @@ button{
 }
 
 .btn{
-    width: 3.75rem;
+    width: clamp(40px, 3.13vw, 60px);
     aspect-ratio: 1;
     border-radius: 100px;
     display: flex;

@@ -1,18 +1,19 @@
 .collection-area{
-    padding: 50px 105px;
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 1.875rem;
+    margin-bottom: 6.5625rem;
 }
 
 .collection{
-    width: 550px;
-    height: 350px;
+    width: clamp(150px, 32.2%, 550px);
+    /* aspect-ratio: 550/350; */
     background: #fff0dc;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     display: flex;
     justify-content: space-between;
-    padding: 25px 20px;
+    align-items: center;
+    padding-block: clamp(10px, 1.47%, 25px);
+    padding-inline: clamp(0px, 1.17%, 20px);
 }
 
 .collection-3{
@@ -20,22 +21,23 @@
 }
 
 .collection h3{
-    font-size: 32px;
+    font-size: clamp(25px, 1.67vw, 32px);
     color: var(--text-color);
+    white-space: nowrap;
+    margin-bottom: .625rem;
 }
-
 .collection-details{
-    padding: 35px 30px;
+    padding-left: clamp(0px, 5.9%, 30px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .collection-details button{
     background: white;
     color: var(--text-color-2);
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: background var(--transition) ease-in-out,
                 color var(--transition) ease-in-out;
 }
