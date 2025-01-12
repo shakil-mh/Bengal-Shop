@@ -72,6 +72,10 @@
 
     /* deal area */
 
+    .deal-area{
+        margin-bottom: 1.25rem;
+    }
+
     .deal-slider button{
     padding-inline: clamp(5px, 23%, 75px);
     }
@@ -79,6 +83,12 @@
     .discount{
         top: .5rem;
         right: .5rem;
+    }
+
+    /* Brands area */
+
+    .brands-area{
+        margin-bottom: 1.25rem;
     }
 
 }
