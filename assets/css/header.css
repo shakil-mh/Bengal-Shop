@@ -29,8 +29,8 @@ header{
     z-index: 999;
     opacity: 0;
     transform: translateY(-100%);
-    transition: transform .5s ease-in-out,
-                opacity .5s ease-in-out;
+    transition: transform .3s ease-in-out,
+                opacity .3s ease-in-out;
 }
 
 .sticking{

@@ -70,6 +70,17 @@
         font-size: 3rem;
     }
 
+    /* deal area */
+
+    .deal-slider button{
+    padding-inline: clamp(5px, 23%, 75px);
+    }
+    
+    .discount{
+        top: .5rem;
+        right: .5rem;
+    }
+
 }
 
 
@@ -98,6 +109,13 @@
     .account-area > span{
         display: none;
     }
+
+    /* deal area */
+
+    .deal-slider button{
+    padding-inline: clamp(5px, 15%, 75px);
+    }
+
 
 
 }
@@ -224,6 +242,10 @@
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
     }
+
+    /* deal area */
+
+
 
 
 }

@@ -54,6 +54,7 @@
 .slider-tittle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5625rem;
 }
 
@@ -172,19 +173,20 @@
 /* Deal area */
 
 .deal-slider{
-    gap: 30px;
-    padding-bottom: 40px;
+    gap: 1.875rem;
+    padding-block: 2.5rem;
 }
 
 .deal-slide{
-    width: 318px;
-    height: 590px;
+    width: clamp(120px, 18.6%, 318px);
+    gap: clamp(5px, .9vw, 16.5px);
 }
 
 .slide-img{
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
     position: relative;
+    background: #f9f9f9;
 }
 
 .hover{
@@ -199,17 +201,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    pointer-events: none;
 }
 
 .deal-slide:hover .hover{
+    pointer-events: auto;
     opacity: 1;
 }
 
 .hover span{
-    width: 60px;
+    width: 3.75rem;
     aspect-ratio: 1;
-    font-size: 28px;
+    font-size: 1.75rem;
     border-radius: 100px;
     border: 1px solid white;
     display: flex;
@@ -230,7 +234,7 @@
 }
 
 .stars i{
-    font-size: 13px;
+    font-size: .8125rem;
     color: var(--gray-color);
 }
 
@@ -239,29 +243,29 @@
 }
 
 .review-number{
-    font-size: 14px;
+    font-size: .875rem;
     color: var(--deep-gray-color);
 }
 
 .deal-slide h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--text-color);
 }
 
 .main-price {
     text-decoration: line-through;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
     color: #bdbdbd;
 }
 
 .deal-slide button{
-    width: 258px;
-    height: 60px;
-    font-size: 18px;
+    padding-inline: clamp(5px, 23.6%, 75px);
+    padding-block: clamp(5px, 4.8%, 15px);
+    font-size: 1.125rem;
     border: 1px solid var(--gray-color);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background: transparent;
     color: var(--green-color);
     transition: background var(--transition) ease-in-out
@@ -275,17 +279,13 @@
 
 .discount{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 56px;
-    height: 32px;
+    top: 1.25rem;
+    right: 1.25rem;
+    padding: .34rem .64rem;
     background: var(--text-color);
     border-radius: 100px;
-    font-size: 14px;
+    font-size: .875rem;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Brands area */

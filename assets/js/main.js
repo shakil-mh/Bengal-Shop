@@ -16,3 +16,19 @@ const observer = new IntersectionObserver((entries)=>{
 })
 
 observer.observe(scrollWatcher);
+
+//  category section
+
+let categorySlider = document.getElementsByClassName("category-slider")[0];
+const categorySlide = categorySlider.innerHTML;
+
+categorySlider.innerHTML += categorySlide
+
+//  deal section
+
+let dealSlider = document.getElementsByClassName("deal-slider")[0];
+const dealSlide = dealSlider.innerHTML;
+
+dealSlider.innerHTML += dealSlide
+
+// 
