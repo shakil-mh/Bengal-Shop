@@ -1,0 +1,122 @@
+
+/* Deal area */
+
+.deal-area{
+    margin-bottom: 4.0625rem;
+}
+
+.deal-slider{
+    gap: 1.875rem;
+    padding-block: 2.5rem;
+}
+
+.deal-slide{
+    width: clamp(120px, 18.6%, 318px);
+    gap: clamp(5px, .9vw, 16.5px);
+}
+
+.slide-img{
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    background: #f9f9f9;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity var(--transition) ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    pointer-events: none;
+}
+
+.deal-slide:hover .hover{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.hover span{
+    width: 3.75rem;
+    aspect-ratio: 1;
+    font-size: 1.75rem;
+    border-radius: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+
+    /* disable text selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.quantity{
+    background: white;
+    color: var(--green-color) !important;
+}
+
+.stars i{
+    font-size: .8125rem;
+    color: var(--gray-color);
+}
+
+.checked{
+    color: #fabe50 !important;
+}
+
+.review-number{
+    font-size: .875rem;
+    color: var(--deep-gray-color);
+}
+
+.deal-slide h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.main-price {
+    text-decoration: line-through;
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #bdbdbd;
+}
+
+.deal-slide button{
+    padding-inline: clamp(5px, 23.6%, 75px);
+    padding-block: clamp(5px, 4.8%, 15px);
+    font-size: 1.125rem;
+    border: 1px solid var(--gray-color);
+    border-radius: 1.875rem;
+    background: transparent;
+    color: var(--green-color);
+    transition: background var(--transition) ease-in-out
+                color var(--transition) ease-in-out;
+}
+
+.deal-slide button:hover{
+    background: var(--green-color);
+    color: white;
+}
+
+.discount{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    padding: .34rem .64rem;
+    background: var(--text-color);
+    border-radius: 100px;
+    font-size: .875rem;
+    color: white;
+}

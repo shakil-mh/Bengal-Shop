@@ -1,0 +1,50 @@
+
+/* Collection area */
+
+.collection-area{
+    display: flex;
+    gap: 1.875rem;
+    margin-bottom: 6.5625rem;
+}
+
+.collection{
+    width: clamp(150px, 32.2%, 550px);
+    background: #fff0dc;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: clamp(10px, 1.47%, 25px);
+    padding-inline: clamp(0px, 1.17%, 20px);
+}
+
+.collection-3{
+    background: #ffebb7;
+}
+
+.collection h3{
+    font-size: clamp(25px, 1.67vw, 32px);
+    color: var(--text-color);
+    white-space: nowrap;
+    margin-bottom: .625rem;
+}
+.collection-details{
+    padding-left: clamp(0px, 5.9%, 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.collection-details button{
+    background: white;
+    color: var(--text-color-2);
+    font-size: 1.25rem;
+    transition: background var(--transition) ease-in-out,
+                color var(--transition) ease-in-out;
+}
+
+.collection-details button:hover{
+    color: white;
+    background: var(--green-color);
+}

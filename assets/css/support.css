@@ -1,0 +1,43 @@
+
+/* Support Area */
+
+.support-area{
+    margin-bottom: 6.5625rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .9375rem;
+}
+
+.support-area >*{
+    flex-grow: 1;
+}
+
+.support-tile{
+    display: flex;
+    max-width: 25.3125rem;
+    aspect-ratio: 405/100;
+}
+
+.support-icon{
+    background: #fbfaeb;
+    aspect-ratio: 1;
+}
+
+.support-tile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline: auto;
+    padding: .3125rem .625rem;
+    white-space: nowrap;
+}
+
+.support-tile-details h5{
+    font-size: clamp(17px, 1.25vw, 24px);
+    color: var(--text-color);
+}
+
+.support-tile-details p{
+    font-size: clamp(15px, .94vw, 18px);
+    color: #828282;
+}

@@ -93,7 +93,8 @@
 
     /* Collection area */
 
-    .collection-area{
+    .collection-area,
+    .support-area{
     margin-bottom: 2.8125rem;
     }
 
@@ -138,6 +139,20 @@
     font-size: clamp(18px, 2.5vw, 32px);
     }
 
+    /* Support area */
+
+    .support-tile-details{
+        margin: 0;
+    }
+
+    .support-tile-details h5{
+        font-size: clamp(11.5px, 1.58vw, 17px);
+    }
+
+    .support-tile-details p{
+        font-size: clamp(9.5px, 1.4vw, 15px);
+    }
+
 
 }
 
@@ -180,7 +195,6 @@
     .sticky .header{
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: "l l l l . . a a a a a m";
-        /* padding-block: .625rem; */
     }
 
     .search-area form img{
@@ -268,7 +282,6 @@
 
     .collection-area{
         gap: .4375rem;
-        /* flex-wrap: wrap; */
     }
 
     .collection{
@@ -278,6 +291,22 @@
     .collection-details h3{
     font-size: clamp(14px, 2.79vw, 20px) !important;
 }
+
+/* Support area */
+
+    .support-area{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .3125rem;
+    }
+
+    .support-tile-details h5{
+        font-size: clamp(9px, 2.8vw, 15px);
+    }
+
+    .support-tile-details p{
+        font-size: clamp(7px, 2.3vw, 13px);
+    }
 
 
 }
