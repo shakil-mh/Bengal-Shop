@@ -332,8 +332,18 @@
     /* footer area */
 
     .footer-top{
+        padding-block: 1.5rem;
         grid-template-areas: "t t t t t t t t t t t t"
                              ". a a a a a a a i i i i";
+    }
+    
+    .footer-text > * + *{
+        margin-top: 1rem;
+    }
+    
+    .footer-text p,
+    .copyright{
+        font-size: 1rem;
     }
 
     .footer-logo{
@@ -352,9 +362,13 @@
     .badge a img{
         height: 100%;
     }
+    
+    .link li{
+        margin-top: 0px;
+    }
 
     .link li a{
-        font-size: 16px;
+        font-size: 1.15rem;
     }
 
     .footer-bottom{
@@ -381,9 +395,5 @@
 
     .payment a img{
         height: 100%;
-    }
-
-    .copyright{
-        font-size: 1rem;
     }
 }

@@ -49,7 +49,7 @@
     .link li{
         font-size: 18px;
         transition: color var(--transition) ease-in-out;
-        margin-top: 25px;
+        margin-top: 1.5625rem;
     }
     
     .link a{
