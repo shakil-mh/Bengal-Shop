@@ -98,6 +98,17 @@
     margin-bottom: 2.8125rem;
     }
 
+    /* footer area */
+
+    .footer-top{
+        padding-block: 50px;
+        grid-template-areas: "t t t t t t . a a . i i";
+    }
+
+    .footer-bottom{
+        padding-bottom: 1.875rem;
+    }
+
 }
 
 
@@ -146,12 +157,21 @@
     }
 
     .support-tile-details h5{
-        font-size: clamp(11.5px, 1.58vw, 17px);
+        font-size: clamp(11.5008px, 1.58vw, 17px);
     }
 
     .support-tile-details p{
-        font-size: clamp(9.5px, 1.4vw, 15px);
+        font-size: clamp(9.5008px, 1.4vw, 15px);
     }
+
+    /* footer area */
+
+    .footer-bottom{
+        grid-template-areas: 
+                            "m m m m m . . p p p p p"
+                            "c c c c c c c c c c c c";
+    }
+
 
 
 }
@@ -286,18 +306,19 @@
 
     .collection{
         flex-direction: column-reverse;
+        align-items: flex-start;
+        border-radius: 10px;
     }
 
     .collection-details h3{
     font-size: clamp(14px, 2.79vw, 20px) !important;
-}
+    }
 
 /* Support area */
 
     .support-area{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: .3125rem;
     }
 
     .support-tile-details h5{
@@ -308,5 +329,61 @@
         font-size: clamp(7px, 2.3vw, 13px);
     }
 
+    /* footer area */
 
+    .footer-top{
+        grid-template-areas: "t t t t t t t t t t t t"
+                             ". a a a a a a a i i i i";
+    }
+
+    .footer-logo{
+        width: clamp(180px, 45%, 220px);
+    }
+
+    .badge{
+        margin-bottom: 28px;
+        justify-content: space-evenly;
+    }
+
+    .badge a{
+        height: 35px;
+    }
+
+    .badge a img{
+        height: 100%;
+    }
+
+    .link li a{
+        font-size: 16px;
+    }
+
+    .footer-bottom{
+        grid-template-areas: "m m m m m m m m m m m m "
+                             "p p p p p p p p p p p p "
+                             "c c c c c c c c c c c c ";
+    }
+
+    .media{
+        place-self: center;
+    }
+
+    .media i{
+        font-size: 18px;
+    }
+
+    .payment{
+        justify-content: center;
+    }
+
+    .payment a{
+        height: 65%;
+    }
+
+    .payment a img{
+        height: 100%;
+    }
+
+    .copyright{
+        font-size: 1rem;
+    }
 }

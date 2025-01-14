@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding-block: clamp(10px, 1.47%, 25px);
-    padding-inline: clamp(0px, 1.17%, 20px);
+    padding-inline: clamp(5px, 1.17%, 20px);
 }
 
 .collection-3{

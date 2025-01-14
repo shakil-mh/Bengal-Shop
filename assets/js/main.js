@@ -7,10 +7,9 @@ const menu = document.getElementsByClassName("menu-area")[0].outerHTML;
 const account = document.getElementsByClassName("account-area")[0].outerHTML;
 const scrollWatcher = document.getElementsByClassName("scroll-watcher")[0];
 
-header.innerHTML = logo + menu + account;
 
 const observer = new IntersectionObserver((entries)=>{
-    console.log()
+    header.innerHTML = logo + menu + account;
     header.parentElement.classList.toggle("sticking", !entries[0].isIntersecting)
 
 })
