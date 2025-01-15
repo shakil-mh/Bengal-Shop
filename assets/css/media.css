@@ -1,399 +1,397 @@
-
-@media (max-width: 1729px){
-
-    .container{
+@media (max-width: 1729px) {
+    .container {
         margin-inline: clamp(10px, 1vw, 1rem);
     }
 
     /* header */
 
-    .header{
+    .header {
         padding: 1rem 2rem;
-        row-gap: .3125rem;
+        row-gap: 0.3125rem;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "l l l l o o o o a a a a"
-        "c c c c s s s s s s s m" ;
+        grid-template-areas:
+            "l l l l o o o o a a a a"
+            "c c c c s s s s s s s m";
     }
 
-    .sticky .header{
+    .sticky .header {
         grid-template-columns: repeat(24, 1fr);
-        grid-template-areas: 
-        "l l l l l l l l l l l l a a a a a a a a a a a m";
+        grid-template-areas: "l l l l l l l l l l l l a a a a a a a a a a a m";
     }
-    
-    .header.container{
+
+    .header.container {
         margin-inline: auto;
     }
 
-    .search-area{
+    .search-area {
         justify-self: center;
     }
 
-    .search-area form input{
+    .search-area form input {
         padding-right: clamp(75px, 22%, 9.6875rem);
     }
 
-    .user-btn{
-        margin-inline: .625rem;
+    .user-btn {
+        margin-inline: 0.625rem;
     }
 
-    .menu-area{
+    .menu-area {
         justify-self: end;
         align-self: center;
     }
 
-    nav{
+    .menu-area nav {
         display: none;
     }
 
-    .menu_btn{
+    .menu-btn {
         display: flex;
     }
 
-    .special-offers{
+    .special-offers {
         justify-content: center;
     }
-    
 
     /* carousel area */
 
-    .carousel-area{
+    .carousel-area {
         min-height: auto;
     }
 
-    .carousel-text-wrapper{
+    .carousel-text-wrapper {
         width: 100%;
     }
 
-    .carousel-text-wrapper h1{
+    .carousel-text-wrapper h1 {
         font-size: 3rem;
     }
 
     /* deal area */
 
-    .deal-area{
+    .deal-area {
         margin-bottom: 1.25rem;
     }
 
-    .deal-slider button{
-    padding-inline: clamp(5px, 23%, 75px);
+    .deal-slider button {
+        padding-inline: clamp(5px, 23%, 75px);
     }
-    
-    .discount{
-        top: .5rem;
-        right: .5rem;
+
+    .discount {
+        top: 0.5rem;
+        right: 0.5rem;
     }
 
     /* Brands area */
 
-    .brands-area{
+    .brands-area {
         margin-bottom: 1.25rem;
     }
 
     /* Collection area */
 
     .collection-area,
-    .support-area{
-    margin-bottom: 2.8125rem;
+    .support-area {
+        margin-bottom: 2.8125rem;
     }
 
     /* footer area */
 
-    .footer-top{
+    .footer-top {
         padding-block: 50px;
         grid-template-areas: "t t t t t t . a a . i i";
     }
 
-    .footer-bottom{
+    .footer-bottom {
         padding-bottom: 1.875rem;
     }
-
 }
 
-
-@media (max-width: 1079px){
-
-    html, body{
+@media (max-width: 1079px) {
+    html,
+    body {
         font-size: 70%;
     }
 
     /* header */
 
-    .header{
-        padding: .5rem 1rem;
+    .header {
+        padding: 0.5rem 1rem;
     }
 
-    .sticky .header{
+    .sticky .header {
         grid-template-columns: repeat(24, 1fr);
-        grid-template-areas: 
-        "l l l l l l l . . . . . . . . . . . . a a a a m";
+        grid-template-areas: "l l l l l l l . . . . . . . . . . . . a a a a m";
     }
 
-    .search-area form input{
+    .search-area form input {
         padding-right: clamp(75px, 19%, 9.6875rem);
     }
 
-    .account-area > span{
+    .account-area > span {
         display: none;
+    }
+
+    .user-btn {
+        margin-right: 0;
+    }
+
+    .menu-top .logo,
+    .menu-top .logo img {
+        width: 130px;
     }
 
     /* deal area */
 
-    .deal-slider button{
-    padding-inline: clamp(5px, 15%, 75px);
+    .deal-slider button {
+        padding-inline: clamp(5px, 15%, 75px);
     }
 
     /* collection area */
 
-    .collection h3{
-    font-size: clamp(18px, 2.5vw, 32px);
+    .collection h3 {
+        font-size: clamp(18px, 2.5vw, 32px);
     }
 
     /* Support area */
 
-    .support-tile-details{
+    .support-tile-details {
         margin: 0;
     }
 
-    .support-tile-details h5{
+    .support-tile-details h5 {
         font-size: clamp(11.5008px, 1.58vw, 17px);
     }
 
-    .support-tile-details p{
+    .support-tile-details p {
         font-size: clamp(9.5008px, 1.4vw, 15px);
     }
 
     /* footer area */
 
-    .footer-bottom{
-        grid-template-areas: 
-                            "m m m m m . . p p p p p"
-                            "c c c c c c c c c c c c";
+    .footer-bottom {
+        grid-template-areas:
+            "m m m m m . . p p p p p"
+            "c c c c c c c c c c c c";
     }
-
-
-
 }
 
-@media (max-width: 719px){
-
-    .main-container{
+@media (max-width: 719px) {
+    .main-container {
         max-width: 500px;
     }
-    
-    h1{
+
+    h1 {
         font-size: 2.4rem !important;
     }
-    
-    h2{
+
+    h2 {
         font-size: 1.8rem !important;
     }
-    
-    h3{
+
+    h3 {
         font-size: 1.7rem !important;
     }
 
-    .btn{
+    .btn {
         width: 3rem;
     }
 
     /* header */
 
-    header{
+    header {
         margin-bottom: 1rem !important;
     }
 
-    .header{
+    .header {
         max-width: 500px;
-        grid-template-areas: 
-        "l l l l l l . . a a a a"
-        "s s s s s s s s s s s m"
-        "c c c c c c o o o o o o" ;
+        grid-template-areas:
+            "l l l l l l . . a a a a"
+            "s s s s s s s s s s s m"
+            "c c c c c c o o o o o o";
     }
 
-    .sticky .header{
+    .sticky .header {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: "l l l l . . a a a a a m";
     }
 
-    .search-area form img{
+    .search-area form img {
         width: 1.1rem;
         left: 4%;
     }
 
-    .search-area form input{
+    .search-area form input {
         width: clamp(250px, 70vw, 400px);
         padding-left: 10%;
     }
 
-    .search-area form button{
-        top: .125rem;
-        right: .125rem;
-        bottom: .125rem;
+    .search-area form button {
+        top: 0.125rem;
+        right: 0.125rem;
+        bottom: 0.125rem;
     }
 
-    .special-offers a{
-        gap: .3125rem;
+    .special-offers a {
+        gap: 0.3125rem;
     }
-
 
     /* carousel area */
 
-    .carousel-area{
+    .carousel-area {
         flex-direction: column-reverse;
         border-radius: 1rem;
         margin-bottom: 2.5rem;
     }
 
-    .carousel-text{
+    .carousel-text {
         justify-content: center;
         padding: 0 1rem 1rem 1rem;
     }
 
-    .carousel-text-wrapper button{
+    .carousel-text-wrapper button {
         font-size: 1.25rem;
     }
 
-    .carousel-slider{
+    .carousel-slider {
         order: 2;
         justify-content: center;
     }
 
-    .carousel-slider img{
+    .carousel-slider img {
         margin: 1rem 1rem 0 1rem;
     }
 
-    .carousel-nav{
+    .carousel-nav {
         margin: 0 auto;
         flex-direction: row;
         margin-block: -1.5rem 2rem;
     }
-    
 
     /* Category area */
-    
-    .category-area{
-        margin-block-end: .625rem;
+
+    .category-area {
+        margin-block-end: 0.625rem;
     }
 
-    .category-btn button{
+    .category-btn button {
         width: auto;
         justify-self: center;
     }
 
-    .category-btn button img{
+    .category-btn button img {
         display: none;
     }
 
-    .category-slide img{
+    .category-slide img {
         width: 80%;
         padding: 0;
     }
 
     /* Offers area */
 
-    .offers-area{
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
+    .offers-area {
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
     }
 
     /* collection area */
 
-    .collection-area{
-        gap: .4375rem;
+    .collection-area {
+        gap: 0.4375rem;
     }
 
-    .collection{
+    .collection {
         flex-direction: column-reverse;
         align-items: flex-start;
         border-radius: 10px;
     }
 
-    .collection-details h3{
-    font-size: clamp(14px, 2.79vw, 20px) !important;
+    .collection-details h3 {
+        font-size: clamp(14px, 2.79vw, 20px) !important;
     }
 
-/* Support area */
+    /* Support area */
 
-    .support-area{
+    .support-area {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .support-tile-details h5{
+    .support-tile-details h5 {
         font-size: clamp(9px, 2.8vw, 15px);
     }
 
-    .support-tile-details p{
+    .support-tile-details p {
         font-size: clamp(7px, 2.3vw, 13px);
     }
 
     /* footer area */
 
-    .footer-top{
+    .footer-top {
         padding-block: 1.5rem;
-        grid-template-areas: "t t t t t t t t t t t t"
-                             ". a a a a a a a i i i i";
+        grid-template-areas:
+            "t t t t t t t t t t t t"
+            ". a a a a a a a i i i i";
     }
-    
-    .footer-text > * + *{
+
+    .footer-text > * + * {
         margin-top: 1rem;
     }
-    
+
     .footer-text p,
-    .copyright{
+    .copyright {
         font-size: 1rem;
     }
 
-    .footer-logo{
+    .footer-logo {
         width: clamp(180px, 45%, 220px);
     }
 
-    .badge{
+    .badge {
         margin-bottom: 28px;
         justify-content: space-evenly;
     }
 
-    .badge a{
+    .badge a {
         height: 35px;
     }
 
-    .badge a img{
+    .badge a img {
         height: 100%;
     }
-    
-    .link li{
+
+    .link li {
         margin-top: 0px;
     }
 
-    .link li a{
+    .link li a {
         font-size: 1.15rem;
     }
 
-    .footer-bottom{
-        grid-template-areas: "m m m m m m m m m m m m "
-                             "p p p p p p p p p p p p "
-                             "c c c c c c c c c c c c ";
+    .footer-bottom {
+        grid-template-areas:
+            "m m m m m m m m m m m m "
+            "p p p p p p p p p p p p "
+            "c c c c c c c c c c c c ";
     }
 
-    .media{
+    .media {
         place-self: center;
     }
 
-    .media i{
+    .media i {
         font-size: 18px;
     }
 
-    .payment{
+    .payment {
         justify-content: center;
     }
 
-    .payment a{
+    .payment a {
         height: 65%;
     }
 
-    .payment a img{
+    .payment a img {
         height: 100%;
     }
 }

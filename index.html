@@ -1,446 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/ui/favicon.png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/images/ui/favicon.png"
+        />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/carusel.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/category.css">
-    <link rel="stylesheet" href="assets/css/offers.css">
-    <link rel="stylesheet" href="assets/css/deal.css">
-    <link rel="stylesheet" href="assets/css/brands.css">
-    <link rel="stylesheet" href="assets/css/collection.css">
-    <link rel="stylesheet" href="assets/css/support.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-    
-    <title>Home | Bengal Shop</title>
-</head>
-<body>
-    <div class="sticky"><div class="header container"></div></div>
-    <header>
-        <div class="header container">
-            <a class="logo" href="index.html"><img src="assets/images/ui/logo.png" alt="Bengal Shop Logo"></a>
-            <div class="search-area">
-                <form action="">
-                    <img src="assets/images/ui/search.png">
-                    <input type="search" name="s" placeholder="Search here.......">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-            <div class="account-area">
-                <div class="heart-btn btn">
-                    <i class="fa-regular fa-heart"></i>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/carusel.css" />
+        <link rel="stylesheet" href="assets/css/slider.css" />
+        <link rel="stylesheet" href="assets/css/category.css" />
+        <link rel="stylesheet" href="assets/css/offers.css" />
+        <link rel="stylesheet" href="assets/css/deal.css" />
+        <link rel="stylesheet" href="assets/css/brands.css" />
+        <link rel="stylesheet" href="assets/css/collection.css" />
+        <link rel="stylesheet" href="assets/css/support.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link rel="stylesheet" href="assets/css/media.css" />
+
+        <title>Home | Bengal Shop</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="sticky"><div class="header container"></div></div>
+        <header>
+            <div class="header container">
+                <a class="logo" href="index.html"
+                    ><img
+                        src="assets/images/ui/logo.png"
+                        alt="Bengal Shop Logo"
+                /></a>
+                <div class="search-area">
+                    <form action="">
+                        <img src="assets/images/ui/search.png" />
+                        <input
+                            type="search"
+                            name="s"
+                            placeholder="Search here......."
+                        />
+                        <button type="submit">Search</button>
+                    </form>
                 </div>
-                <div class="cart-btn btn">
-                    <span>1</span>
-                    <div class="cart-logo">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                <div class="account-area">
+                    <div class="heart-btn btn">
+                        <i class="fa-regular fa-heart"></i>
                     </div>
-                </div>
-                <div class="user-btn btn">
-                    <i class="fa-regular fa-user"></i>
-                </div>
-                <span>Account</span>
-            </div>
-            <div class="category-btn">
-                <button>
-                    <img src="assets/images/ui/menu-right.png">
-                    <span>All Categories</span>
-                    <img src="assets/images/ui/chevron-down.png">
-                </button>
-            </div>
-            <div class="menu-area">
-                <nav>
-                    <button class="active">Home <img src="assets/images/ui/caret-down.png"></button>
-                    <button>Shop<img src="assets/images/ui/caret-down.png"></button>
-                    <button>Pages<img src="assets/images/ui/caret-down.png"></button>
-                    <button>Blogs<img src="assets/images/ui/caret-down.png"></button>
-                    <button>Contact</button>
-                    <button>Track Order</button>
-                </nav>
-                <div class="menu_btn btn" onclick="showMenu()">
-                    <div class="bar-1"></div>
-                    <div class="bar-2"></div>
-                    <div class="bar-3"></div>
-                </div>
-            </div>
-            <div class="special-offers">
-                <a href="">
-                    <img src="assets/images/ui/percentage.png">
-                    Special Offers!
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <div class="scroll-watcher"></div>
-
-    <div class="main-container">
-        <section class="carousel-area container">
-            <div class="carousel-text">
-                <div class="carousel-text-wrapper">
-                    <h2>Save up 30% off</h2>
-                    <h1>Bengal Vegetable <br> Farm &nbsp;Organic 100%</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula faucibus massa est elit maecenas.</p>
-                    <button>Shop Now</button>
-                </div>
-            </div>
-            <div class="carousel-slider">
-                <!-- <img src="assets/images/slide-1.png" alt=""> -->
-                <img src="assets/images/slide-0.png" alt="">
-                <!-- <img src="assets/images/slide-1.png" alt=""> -->
-            </div>
-            <div class="carousel-nav">
-                <a href=""></a>
-                <a class="current-slide" href=""></a>
-                <a href=""></a>
-            </div>
-        </section>
-
-        <section class="category-area container">
-            <div class="slider-tittle">
-                <h3>Search by Category</h3>
-                <div class="slider-btn">
-                    <button class="slider-btn slider-btn-left" onclick="sliderControl(0, this)">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn slider-btn-right slider-btn-active" onclick="sliderControl(1, this)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="slider category-slider" onscroll="sliderBtnCtrl(this)">
-                <div class="slide category-slide category-slide-1">
-                    <img src="assets/images/category-1.png" alt="Category Image">
-                    <h4>Groceries</h4>
-                </div>
-                <div class="slide category-slide category-slide-2">
-                    <img src="assets/images/category-2.png" alt="Category Image">
-                    <h4>Fish</h4>
-                </div>
-                <div class="slide category-slide category-slide-3">
-                    <img src="assets/images/category-3.png" alt="Category Image">
-                    <h4>Meat</h4>
-                </div>
-                <div class="slide category-slide category-slide-4">
-                    <img src="assets/images/category-4.png" alt="Category Image">
-                    <h4>Vegetables</h4>
-                </div>
-                <div class="slide category-slide category-slide-5">
-                    <img src="assets/images/category-5.png" alt="Category Image">
-                    <h4>Fruits</h4>
-                </div>
-                <div class="slide category-slide category-slide-6">
-                    <img src="assets/images/category-6.png" alt="Category Image">
-                    <h4>Ice Cream</h4>
-                </div>
-            </div>
-        </section>
-
-        <section class="offers-area container">
-            <div class="offer">
-                <img src="assets/images/offer-1.png" alt="">
-                <div class="offer-text">
-                    <p>Buy 1 Get 1</p>
-                    <h2>Fresh Fruits <br> Collection</h2>
-                    <button>Order Now</button>
-                </div>
-            </div>
-            <div class="offer">
-                <img src="assets/images/offer-2.png" alt="">
-                <div class="offer-text">
-                    <p>Buy 1 Get 1</p>
-                    <h2>Fresh Fruits <br> Collection</h2>
-                    <button>Order Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="deal-area container">
-            <div class="slider-tittle">
-                <h3>Deals of the Week</h3>
-                <div class="slider-btn">
-                    <button class="slider-btn slider-btn-left" onclick="sliderControl(0, this)">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn slider-btn-right slider-btn-active" onclick="sliderControl(1, this)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="slider deal-slider" onscroll="sliderBtnCtrl(this)">
-                <div class="slide deal-slide deal-slide-1">
-                    <div class="slide-img">
-                        <img src="assets/images/deal-1.png" alt="Deal Image">
-                        <div class="hover">
-                            <span class="subtract">-</span><span class="quantity">1</span><span class="add">+</span>
+                    <div class="cart-btn btn">
+                        <span>1</span>
+                        <div class="cart-logo">
+                            <i class="fa-solid fa-bag-shopping"></i>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <span class="review-number">(121)</span>
+                    <div class="user-btn btn">
+                        <i class="fa-regular fa-user"></i>
                     </div>
-                    <h4>Product Name</h4>
-                    <h4>$200 <span class="main-price">$300</span></h4>
-                    <button>Add to Cart</button>
-                    <div class="discount">-30%</div>
+                    <span>Account</span>
                 </div>
-                <div class="slide deal-slide deal-slide-2">
-                    <div class="slide-img">
-                        <img src="assets/images/deal-2.png" alt="Deal Image">
-                        <div class="hover">
-                            <span class="subtract">-</span><span class="quantity">1</span><span class="add">+</span>
-                        </div>
-                    </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <span class="review-number">(121)</span>
-                    </div>
-                    <h4>Product Name</h4>
-                    <h4>$200 <span class="main-price">$300</span></h4>
-                    <button>Add to Cart</button>
-                    <div class="discount">-30%</div>
+                <div class="category-btn">
+                    <button>
+                        <img src="assets/images/ui/menu-right.png" />
+                        <span>All Categories</span>
+                        <img src="assets/images/ui/chevron-down.png" />
+                    </button>
                 </div>
-                <div class="slide deal-slide deal-slide-3">
-                    <div class="slide-img">
-                        <img src="assets/images/deal-3.png" alt="Deal Image">
-                        <div class="hover">
-                            <span class="subtract">-</span><span class="quantity">1</span><span class="add">+</span>
-                        </div>
+                <div class="menu-area">
+                    <nav>
+                        <button class="menu-active">
+                            Home <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button>
+                            Shop<i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button>
+                            Pages<i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button>
+                            Blogs<i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <button>Contact</button>
+                        <button>Track Order</button>
+                    </nav>
+                    <div class="menu-btn btn" onclick="showMenu()">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <span class="review-number">(121)</span>
-                    </div>
-                    <h4>Product Name</h4>
-                    <h4>$200 <span class="main-price">$300</span></h4>
-                    <button>Add to Cart</button>
-                    <div class="discount">-30%</div>
                 </div>
-                <div class="slide deal-slide deal-slide-4">
-                    <div class="slide-img">
-                        <img src="assets/images/deal-4.png" alt="Deal Image">
-                        <div class="hover">
-                            <span class="subtract">-</span><span class="quantity">1</span><span class="add">+</span>
-                        </div>
-                    </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <span class="review-number">(121)</span>
-                    </div>
-                    <h4>Product Name</h4>
-                    <h4>$200 <span class="main-price">$300</span></h4>
-                    <button>Add to Cart</button>
-                    <div class="discount">-30%</div>
-                </div>
-                <div class="slide deal-slide deal-slide-5">
-                    <div class="slide-img">
-                        <img src="assets/images/deal-5.png" alt="Deal Image">
-                        <div class="hover">
-                            <span class="subtract">-</span><span class="quantity">1</span><span class="add">+</span>
-                        </div>
-                    </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <i class="fa-solid fa-star checked"></i>
-                        <span class="review-number">(121)</span>
-                    </div>
-                    <h4>Product Name</h4>
-                    <h4>$200 <span class="main-price">$300</span></h4>
-                    <button>Add to Cart</button>
-                    <div class="discount">-30%</div>
+                <div class="special-offers">
+                    <a href="">
+                        <img src="assets/images/ui/percentage.png" />
+                        Special Offers!
+                    </a>
                 </div>
             </div>
-        </section>
+        </header>
+        <div class="scroll-watcher"></div>
+        <div class="mobile-menu"></div>
 
-        <section class="brands-area container">
-            <div class="slider-tittle">
-                <h3>Popular Brands</h3>
-                <div class="slider-btn">
-                    <button class="slider-btn slider-btn-left" onclick="sliderControl(0, this)">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-btn slider-btn-right slider-btn-active" onclick="sliderControl(1, this)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="slider brands-slider" onscroll="sliderBtnCtrl(this)">
-                <div class="slide brands-slide brands-slide-1">
-                    <img src="assets/images/brand-1.png" alt="Brand Logo">
-                </div>
-                <div class="slide brands-slide brands-slide-2">
-                    <img src="assets/images/brand-2.png" alt="Brand Logo">
-                </div>
-                <div class="slide brands-slide brands-slide-3">
-                    <img src="assets/images/brand-3.png" alt="Brand Logo">
-                </div>
-                <div class="slide brands-slide brands-slide-4">
-                    <img src="assets/images/brand-4.png" alt="Brand Logo">
-                </div>
-                <div class="slide brands-slide brands-slide-5">
-                    <img src="assets/images/brand-5.png" alt="Brand Logo">
-                </div>
-                <div class="slide brands-slide brands-slide-6">
-                    <img src="assets/images/brand-6.png" alt="Brand Logo">
-                </div>
-            </div>
-        </section>
-
-        <section class="collection-area container">
-            <div class="collection collection-1">
-                <div class="collection-details">
-                    <h3>Fresh Fruits <br> Collection</h3>
-                    <button class="btn">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                <div class="category-img">
-                    <img src="assets/images/collection-1.png" alt="">
-                </div>
-            </div>
-            <div class="collection collection-2">
-                <div class="collection-details">
-                    <h3>Vegetable <br> Collection</h3>
-                    <button class="btn">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                <div class="category-img">
-                    <img src="assets/images/collection-2.png" alt="">
-                </div>
-            </div>
-            <div class="collection collection-3">
-                <div class="collection-details">
-                    <h3>Grocery <br> Items</h3>
-                    <button class="btn">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                <div class="category-img">
-                    <img src="assets/images/collection-3.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="support-area container">
-            <div class="support-tile">
-                <div class="support-icon">
-                    <img src="assets/images/ui/support-1.png" alt="">
-                </div>
-                <div class="support-tile-details">
-                    <h5>24 Customer Support</h5>
-                    <p>Contact us 24 hours</p>
-                </div>
-            </div>
-            <div class="support-tile">
-                <div class="support-icon">
-                    <img src="assets/images/ui/support-2.png" alt="">
-                </div>
-                <div class="support-tile-details">
-                    <h5>Authentic Product</h5>
-                    <p>Contact us 24 hours</p>
-                </div>
-            </div>
-            <div class="support-tile">
-                <div class="support-icon">
-                    <img src="assets/images/ui/support-3.png" alt="">
-                </div>
-                <div class="support-tile-details">
-                    <h5>Secure Payment</h5>
-                    <p>Contact us 24 hours</p>
-                </div>
-            </div>
-            <div class="support-tile">
-                <div class="support-icon">
-                    <img src="assets/images/ui/support-4.png" alt="">
-                </div>
-                <div class="support-tile-details">
-                    <h5>Best Prices & Offers</h5>
-                    <p>Contact us 24 hours</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
         <div class="main-container">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="footer-text">
-                        <img class="footer-logo" src="assets/images/ui/logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam ornare nam est gravida. Netus viverra rhoncus sit magna sapien ac eget parturient id. Est luctus dapibus quam aliquam in nisl turpis. Elit et dictum lacus morbi nec accumsan a in.</p>
-                        <div class="badge">
-                            <a href=""><img src="assets/images/ui/apple-badge.png" alt=""></a>
-                            <a href=""><img src="assets/images/ui/play-store-badge.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="about-us">
-                        <h5>About Us</h5>
-                        <ul class="link">
-                            <li><a href="">About Karte</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Career</a></li>
-                            <li><a href="">Terms & Condition</a></li>
-                            <li><a href="">Category</a></li>
-                        </ul>
-                    </div>
-                    <div class="info">
-                        <h5>Info</h5>
-                        <ul class="link">
-                            <li><a href="">Information</a></li>
-                            <li><a href="">Shipping</a></li>
-                            <li><a href="">Payment</a></li>
-                            <li><a href="">Return</a></li>
-                            <li><a href="">Blog</a></li>
-                        </ul>
+            <section class="carousel-area container">
+                <div class="carousel-text">
+                    <div class="carousel-text-wrapper">
+                        <h2>Save up 30% off</h2>
+                        <h1>
+                            Bengal Vegetable <br />
+                            Farm &nbsp;Organic 100%
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vehicula faucibus massa est elit maecenas.
+                        </p>
+                        <button>Shop Now</button>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="media">
-                        <a class="btn" href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="btn" href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a class="btn" href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a class="btn" href=""><i class="fa-brands fa-skype"></i></a>
+                <div class="carousel-slider">
+                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
+                    <img src="assets/images/slide-0.png" alt="" />
+                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
+                </div>
+                <div class="carousel-nav">
+                    <a href=""></a>
+                    <a class="current-slide" href=""></a>
+                    <a href=""></a>
+                </div>
+            </section>
+
+            <section class="category-area container">
+                <div class="slider-tittle">
+                    <h3>Search by Category</h3>
+                    <div class="slider-btn">
+                        <button
+                            class="slider-btn slider-btn-left"
+                            onclick="sliderControl(0, this)"
+                        >
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="slider-btn slider-btn-right slider-btn-active"
+                            onclick="sliderControl(1, this)"
+                        >
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
-                    <p class="copyright"> @2022 Copyright All Right Reserved by Bengal Shop</p>
-                    <div class="payment">
-                        <a href=""><img src="assets/images/ui/paypal.png" alt=""></a>
-                        <a href=""><img src="assets/images/ui/visa.png" alt=""></a>
-                        <a href=""><img src="assets/images/ui/apple-pay.png" alt=""></a>
-                        <a href=""><img src="assets/images/ui/google-pay.png" alt=""></a>
+                </div>
+                <div
+                    class="slider category-slider"
+                    onscroll="sliderBtnCtrl(this)"
+                >
+                    <div class="slide category-slide category-slide-1">
+                        <img
+                            src="assets/images/category-1.png"
+                            alt="Category Image"
+                        />
+                        <h4>Groceries</h4>
+                    </div>
+                    <div class="slide category-slide category-slide-2">
+                        <img
+                            src="assets/images/category-2.png"
+                            alt="Category Image"
+                        />
+                        <h4>Fish</h4>
+                    </div>
+                    <div class="slide category-slide category-slide-3">
+                        <img
+                            src="assets/images/category-3.png"
+                            alt="Category Image"
+                        />
+                        <h4>Meat</h4>
+                    </div>
+                    <div class="slide category-slide category-slide-4">
+                        <img
+                            src="assets/images/category-4.png"
+                            alt="Category Image"
+                        />
+                        <h4>Vegetables</h4>
+                    </div>
+                    <div class="slide category-slide category-slide-5">
+                        <img
+                            src="assets/images/category-5.png"
+                            alt="Category Image"
+                        />
+                        <h4>Fruits</h4>
+                    </div>
+                    <div class="slide category-slide category-slide-6">
+                        <img
+                            src="assets/images/category-6.png"
+                            alt="Category Image"
+                        />
+                        <h4>Ice Cream</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers-area container">
+                <div class="offer">
+                    <img src="assets/images/offer-1.png" alt="" />
+                    <div class="offer-text">
+                        <p>Buy 1 Get 1</p>
+                        <h2>
+                            Fresh Fruits <br />
+                            Collection
+                        </h2>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="assets/images/offer-2.png" alt="" />
+                    <div class="offer-text">
+                        <p>Buy 1 Get 1</p>
+                        <h2>
+                            Fresh Fruits <br />
+                            Collection
+                        </h2>
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="deal-area container">
+                <div class="slider-tittle">
+                    <h3>Deals of the Week</h3>
+                    <div class="slider-btn">
+                        <button
+                            class="slider-btn slider-btn-left"
+                            onclick="sliderControl(0, this)"
+                        >
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="slider-btn slider-btn-right slider-btn-active"
+                            onclick="sliderControl(1, this)"
+                        >
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="slider deal-slider" onscroll="sliderBtnCtrl(this)">
+                    <div class="slide deal-slide deal-slide-1">
+                        <div class="slide-img">
+                            <img
+                                src="assets/images/deal-1.png"
+                                alt="Deal Image"
+                            />
+                            <div class="hover">
+                                <span class="subtract">-</span
+                                ><span class="quantity">1</span
+                                ><span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <span class="review-number">(121)</span>
+                        </div>
+                        <h4>Product Name</h4>
+                        <h4>$200 <span class="main-price">$300</span></h4>
+                        <button>Add to Cart</button>
+                        <div class="discount">-30%</div>
+                    </div>
+                    <div class="slide deal-slide deal-slide-2">
+                        <div class="slide-img">
+                            <img
+                                src="assets/images/deal-2.png"
+                                alt="Deal Image"
+                            />
+                            <div class="hover">
+                                <span class="subtract">-</span
+                                ><span class="quantity">1</span
+                                ><span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <span class="review-number">(121)</span>
+                        </div>
+                        <h4>Product Name</h4>
+                        <h4>$200 <span class="main-price">$300</span></h4>
+                        <button>Add to Cart</button>
+                        <div class="discount">-30%</div>
+                    </div>
+                    <div class="slide deal-slide deal-slide-3">
+                        <div class="slide-img">
+                            <img
+                                src="assets/images/deal-3.png"
+                                alt="Deal Image"
+                            />
+                            <div class="hover">
+                                <span class="subtract">-</span
+                                ><span class="quantity">1</span
+                                ><span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <span class="review-number">(121)</span>
+                        </div>
+                        <h4>Product Name</h4>
+                        <h4>$200 <span class="main-price">$300</span></h4>
+                        <button>Add to Cart</button>
+                        <div class="discount">-30%</div>
+                    </div>
+                    <div class="slide deal-slide deal-slide-4">
+                        <div class="slide-img">
+                            <img
+                                src="assets/images/deal-4.png"
+                                alt="Deal Image"
+                            />
+                            <div class="hover">
+                                <span class="subtract">-</span
+                                ><span class="quantity">1</span
+                                ><span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <span class="review-number">(121)</span>
+                        </div>
+                        <h4>Product Name</h4>
+                        <h4>$200 <span class="main-price">$300</span></h4>
+                        <button>Add to Cart</button>
+                        <div class="discount">-30%</div>
+                    </div>
+                    <div class="slide deal-slide deal-slide-5">
+                        <div class="slide-img">
+                            <img
+                                src="assets/images/deal-5.png"
+                                alt="Deal Image"
+                            />
+                            <div class="hover">
+                                <span class="subtract">-</span
+                                ><span class="quantity">1</span
+                                ><span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <span class="review-number">(121)</span>
+                        </div>
+                        <h4>Product Name</h4>
+                        <h4>$200 <span class="main-price">$300</span></h4>
+                        <button>Add to Cart</button>
+                        <div class="discount">-30%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brands-area container">
+                <div class="slider-tittle">
+                    <h3>Popular Brands</h3>
+                    <div class="slider-btn">
+                        <button
+                            class="slider-btn slider-btn-left"
+                            onclick="sliderControl(0, this)"
+                        >
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="slider-btn slider-btn-right slider-btn-active"
+                            onclick="sliderControl(1, this)"
+                        >
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="slider brands-slider"
+                    onscroll="sliderBtnCtrl(this)"
+                >
+                    <div class="slide brands-slide brands-slide-1">
+                        <img src="assets/images/brand-1.png" alt="Brand Logo" />
+                    </div>
+                    <div class="slide brands-slide brands-slide-2">
+                        <img src="assets/images/brand-2.png" alt="Brand Logo" />
+                    </div>
+                    <div class="slide brands-slide brands-slide-3">
+                        <img src="assets/images/brand-3.png" alt="Brand Logo" />
+                    </div>
+                    <div class="slide brands-slide brands-slide-4">
+                        <img src="assets/images/brand-4.png" alt="Brand Logo" />
+                    </div>
+                    <div class="slide brands-slide brands-slide-5">
+                        <img src="assets/images/brand-5.png" alt="Brand Logo" />
+                    </div>
+                    <div class="slide brands-slide brands-slide-6">
+                        <img src="assets/images/brand-6.png" alt="Brand Logo" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-area container">
+                <div class="collection collection-1">
+                    <div class="collection-details">
+                        <h3>
+                            Fresh Fruits <br />
+                            Collection
+                        </h3>
+                        <button class="btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="category-img">
+                        <img src="assets/images/collection-1.png" alt="" />
+                    </div>
+                </div>
+                <div class="collection collection-2">
+                    <div class="collection-details">
+                        <h3>
+                            Vegetable <br />
+                            Collection
+                        </h3>
+                        <button class="btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="category-img">
+                        <img src="assets/images/collection-2.png" alt="" />
+                    </div>
+                </div>
+                <div class="collection collection-3">
+                    <div class="collection-details">
+                        <h3>
+                            Grocery <br />
+                            Items
+                        </h3>
+                        <button class="btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="category-img">
+                        <img src="assets/images/collection-3.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-area container">
+                <div class="support-tile">
+                    <div class="support-icon">
+                        <img src="assets/images/ui/support-1.png" alt="" />
+                    </div>
+                    <div class="support-tile-details">
+                        <h5>24 Customer Support</h5>
+                        <p>Contact us 24 hours</p>
+                    </div>
+                </div>
+                <div class="support-tile">
+                    <div class="support-icon">
+                        <img src="assets/images/ui/support-2.png" alt="" />
+                    </div>
+                    <div class="support-tile-details">
+                        <h5>Authentic Product</h5>
+                        <p>Contact us 24 hours</p>
+                    </div>
+                </div>
+                <div class="support-tile">
+                    <div class="support-icon">
+                        <img src="assets/images/ui/support-3.png" alt="" />
+                    </div>
+                    <div class="support-tile-details">
+                        <h5>Secure Payment</h5>
+                        <p>Contact us 24 hours</p>
+                    </div>
+                </div>
+                <div class="support-tile">
+                    <div class="support-icon">
+                        <img src="assets/images/ui/support-4.png" alt="" />
+                    </div>
+                    <div class="support-tile-details">
+                        <h5>Best Prices & Offers</h5>
+                        <p>Contact us 24 hours</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="main-container">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-text">
+                            <img
+                                class="footer-logo"
+                                src="assets/images/ui/logo.png"
+                                alt=""
+                            />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nulla diam ornare nam est
+                                gravida. Netus viverra rhoncus sit magna sapien
+                                ac eget parturient id. Est luctus dapibus quam
+                                aliquam in nisl turpis. Elit et dictum lacus
+                                morbi nec accumsan a in.
+                            </p>
+                            <div class="badge">
+                                <a href=""
+                                    ><img
+                                        src="assets/images/ui/apple-badge.png"
+                                        alt=""
+                                /></a>
+                                <a href=""
+                                    ><img
+                                        src="assets/images/ui/play-store-badge.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="about-us">
+                            <h5>About Us</h5>
+                            <ul class="link">
+                                <li><a href="">About Karte</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Career</a></li>
+                                <li><a href="">Terms & Condition</a></li>
+                                <li><a href="">Category</a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h5>Info</h5>
+                            <ul class="link">
+                                <li><a href="">Information</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Payment</a></li>
+                                <li><a href="">Return</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="media">
+                            <a class="btn" href=""
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                            <a class="btn" href=""
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                            <a class="btn" href=""
+                                ><i class="fa-brands fa-twitter"></i
+                            ></a>
+                            <a class="btn" href=""
+                                ><i class="fa-brands fa-skype"></i
+                            ></a>
+                        </div>
+                        <p class="copyright">
+                            @2022 Copyright All Right Reserved by Bengal Shop
+                        </p>
+                        <div class="payment">
+                            <a href=""
+                                ><img src="assets/images/ui/paypal.png" alt=""
+                            /></a>
+                            <a href=""
+                                ><img src="assets/images/ui/visa.png" alt=""
+                            /></a>
+                            <a href=""
+                                ><img
+                                    src="assets/images/ui/apple-pay.png"
+                                    alt=""
+                            /></a>
+                            <a href=""
+                                ><img
+                                    src="assets/images/ui/google-pay.png"
+                                    alt=""
+                            /></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="https://kit.fontawesome.com/746bd87ac3.js" crossorigin="anonymous"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+        <script
+            src="https://kit.fontawesome.com/746bd87ac3.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

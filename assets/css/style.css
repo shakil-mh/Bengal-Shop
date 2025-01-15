@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Ga+Maamli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Ga+Maamli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,49 +8,53 @@
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
     display: none; /* chrome, opera, safari */
 }
 
-html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-html, body{
+html,
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     min-width: 320px;
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
 }
 
-:root{
-    --green-color: #27AE60;
-    --light-gray-color: #F2F2F2;
-    --gray-color: #E0E0E0;
-    --deep-gray-color: #4F4F4F;
-    --text-color: #333333;
-    --text-color-2: #FF5C00;
-    --font-size: 1.125rem;
-    --transition: .1s;
+i {
+    font-size: 1.45rem;
+    color: var(--deep-gray-color);
 }
 
-.btn{
+:root {
+    --green-color: #27ae60;
+    --light-gray-color: #f2f2f2;
+    --gray-color: #e0e0e0;
+    --deep-gray-color: #4f4f4f;
+    --text-color: #333333;
+    --text-color-2: #ff5c00;
+    --font-size: 1.125rem;
+    --transition: 0.1s;
+}
+
+.btn {
     width: clamp(40px, 3.13vw, 60px);
     aspect-ratio: 1;
     border-radius: 100px;
@@ -61,12 +64,31 @@ button{
     cursor: pointer;
 }
 
-.container{
+.container {
     max-width: 1710px;
     margin-inline: auto;
 }
 
-.main-container{
+.main-container {
     max-width: 1920px;
     margin-inline: auto;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    backdrop-filter: blur(0.125rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.bg-show {
+    visibility: visible;
+    opacity: 1;
 }

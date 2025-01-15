@@ -21,6 +21,7 @@
 .support-icon{
     background: #fbfaeb;
     aspect-ratio: 1;
+    border-radius: .625rem;
 }
 
 .support-tile-details{
