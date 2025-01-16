@@ -38,11 +38,6 @@ button {
     border: none;
 }
 
-i {
-    font-size: 1.45rem;
-    color: var(--deep-gray-color);
-}
-
 :root {
     --green-color: #27ae60;
     --light-gray-color: #f2f2f2;

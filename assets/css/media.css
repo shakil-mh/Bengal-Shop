@@ -317,6 +317,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .support-icon{border-radius: .3125rem;
+    }
+    
+
     .support-tile-details h5 {
         font-size: clamp(9px, 2.8vw, 15px);
     }

@@ -107,6 +107,10 @@
     justify-self: end;
 }
 
+.account-area i{
+    font-size: 1.3rem;
+}
+
 .cart-btn {
     position: relative;
 }
@@ -225,7 +229,7 @@ nav button i {
 .mobile-menu {
     background: white;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
