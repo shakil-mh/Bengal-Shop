@@ -28,8 +28,6 @@ mobileMenu.innerHTML =
     nav;
 const menuCloseBtn = mobileMenu.querySelector(".menu-top i");
 
-console.log();
-
 function showMenu() {
     mobileMenu.classList.add("mobile-menu-active");
     bg.classList.add("bg-show");
@@ -43,6 +41,11 @@ function hideMenu() {
 }
 
 menuCloseBtn.addEventListener("click", hideMenu);
+
+mobileMenu.querySelectorAll("button").forEach((btn) => {
+    btn.classList.add("mobile-menu-list");
+})
+
 
 //  category section
 

@@ -80,7 +80,7 @@ button {
     backdrop-filter: blur(0.125rem);
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
 }
 
 .bg-show {

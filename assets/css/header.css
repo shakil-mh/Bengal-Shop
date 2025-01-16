@@ -107,7 +107,7 @@
     justify-self: end;
 }
 
-.account-area i{
+.account-area i {
     font-size: 1.3rem;
 }
 
@@ -185,7 +185,7 @@ nav {
     justify-self: center;
     display: flex;
     gap: 3.125rem;
-    padding-block: 0.75rem 0.1875rem;
+    padding-block-start: 0.75rem;
 }
 
 nav button {
@@ -195,6 +195,8 @@ nav button {
     transition: color var(--transition) ease-in-out;
     background: transparent;
     display: flex;
+    position: relative;
+    border-bottom: 4px solid transparent;
 }
 
 nav button:hover {
@@ -220,6 +222,41 @@ nav button i {
     display: none;
 }
 
+/* Dropdown */
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    background: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out,
+        transform 0.1s ease-in-out;
+}
+
+nav button:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.mobile-menu-list {
+    border-bottom: 1px solid var(--gray-color);
+    padding: 0.6rem 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--deep-gray-color);
+}
+
+.mobile-menu-list:hover {
+    color: var(--green-color);
+}
+
 /* mobile menu area */
 
 .menu-btn i {
@@ -239,7 +276,7 @@ nav button i {
     z-index: 999999999999999999999999999;
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
 }
 
 .mobile-menu-active {
@@ -248,13 +285,8 @@ nav button i {
 }
 
 .mobile-menu button {
-    padding: 0.6rem 1.5rem;
-    width: 100%;
     background: white;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--gray-color);
 }
 
 .mobile-menu .menu-active {
