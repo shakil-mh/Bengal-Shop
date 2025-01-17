@@ -1,23 +1,22 @@
-
 /* Brands area */
 
-.brands-area{
+.brands-area {
     margin-bottom: 2.8125rem;
 }
 
-.brands-slider{
+.brands-slider {
     gap: 1.875rem;
     padding: 1.875rem 0;
 }
 
-.brands-slide{
+.brands-slide {
     width: clamp(85px, 15.25%, 260px);
     aspect-ratio: 250/190;
-    padding: .5rem;
+    padding: 0.5rem;
     justify-content: center;
     cursor: pointer;
 }
 
-.brands-slide:hover{
+.brands-slide:hover {
     background: var(--gray-color);
 }

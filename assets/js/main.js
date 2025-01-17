@@ -16,16 +16,30 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(scrollWatcher);
 
-// mobile menu
+// Creating mobile menu
 
 const mobileMenu = document.getElementsByClassName("mobile-menu")[0];
-const nav = document.getElementsByTagName("nav")[0].innerHTML;
+const menuTop = document.createElement("div");
+menuTop.classList.add("menu-top");
+menuTop.innerHTML = logo + `<i class="fa-solid fa-xmark"></i>`;
+const dropdown = document.getElementsByClassName("dropdown");
+const ul = document.createElement("ul");
+ul.innerHTML = `<li>Home<i class="fa-solid fa-caret-down"></i></li>
+                ${dropdown[0].outerHTML}
+                <li>Shop<i class="fa-solid fa-caret-down"></i></li>
+                ${dropdown[1].outerHTML}
+                <li>Pages<i class="fa-solid fa-caret-down"></i></li>
+                ${dropdown[2].outerHTML}
+                <li>Blog<i class="fa-solid fa-caret-down"></i></li>
+                ${dropdown[3].outerHTML}
+                <li>Contact</li>
+                <li>Track Order</li>`;
+
+mobileMenu.append(menuTop, ul); // Inserting menu top and ul to mobile menu
+
+//  Mobile menu toggle
+
 const bg = document.getElementsByClassName("bg")[0];
-mobileMenu.innerHTML =
-    `<div class="menu-top">` +
-    logo +
-    `<i class="cancel-mobile-menu fa-solid fa-xmark"></i></div>` +
-    nav;
 const menuCloseBtn = mobileMenu.querySelector(".menu-top i");
 
 function showMenu() {
@@ -42,10 +56,23 @@ function hideMenu() {
 
 menuCloseBtn.addEventListener("click", hideMenu);
 
-mobileMenu.querySelectorAll("button").forEach((btn) => {
-    btn.classList.add("mobile-menu-list");
-})
+// mobile sub menu toggle
 
+const menuList = Array.from(mobileMenu.querySelectorAll("li"));
+menuList.splice(-2, 2);
+
+menuList.forEach((li) => {
+    li.addEventListener("click", () => {
+        li.nextElementSibling.classList.toggle("show-dropdown");
+
+        if (li.nextElementSibling.classList.contains("show-dropdown")) {
+            li.nextElementSibling.style.height =
+            li.nextElementSibling.scrollHeight + "px";
+        } else {
+            li.nextElementSibling.style.height = 0;
+        }
+    });
+});
 
 //  category section
 

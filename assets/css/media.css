@@ -40,7 +40,7 @@
         align-self: center;
     }
 
-    .menu-area nav {
+    .menu-area .nav {
         display: none;
     }
 
@@ -261,7 +261,7 @@
         margin: 1rem 1rem 0 1rem;
     }
 
-    .carousel-nav {
+    .carousel-.nav {
         margin: 0 auto;
         flex-direction: row;
         margin-block: -1.5rem 2rem;

@@ -1,16 +1,15 @@
-
 /* For all Slider */
 
-.slider{
+.slider {
     max-width: 1710px;
     display: flex;
     overflow-x: auto;
     transform: rotateX(180deg);
-    -ms-transform:rotateX(180deg); /* IE 9 */
-    -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+    -ms-transform: rotateX(180deg); /* IE 9 */
+    -webkit-transform: rotateX(180deg); /* Safari and Chrome */
 }
 
-.slider::-webkit-scrollbar{
+.slider::-webkit-scrollbar {
     height: 4px;
 }
 
@@ -26,13 +25,13 @@
     cursor: pointer;
 }
 
-.slider-btn{
+.slider-btn {
     display: flex;
-    gap: .9375rem;
+    gap: 0.9375rem;
     align-items: end;
 }
 
-.slider-btn button{
+.slider-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,25 +44,25 @@
     color: #a4a4a4;
 }
 
-.slider-btn-active{
+.slider-btn-active {
     background: var(--green-color) !important;
     color: white !important;
 }
 
-.slider-tittle{
+.slider-tittle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5625rem;
 }
 
-.slider-tittle h3{
+.slider-tittle h3 {
     font-size: 2.25rem;
     color: var(--text-color);
     font-weight: 600;
 }
 
-.slide{
+.slide {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -71,8 +70,8 @@
     align-items: center;
     flex-shrink: 0;
     transform: rotateX(180deg);
-    -ms-transform:rotateX(180deg); /* IE 9 */
-    -webkit-transform:rotateX(180deg); /* Safari and Chrome */
+    -ms-transform: rotateX(180deg); /* IE 9 */
+    -webkit-transform: rotateX(180deg); /* Safari and Chrome */
     transition: box-shadow var(--transition) ease-in-out,
-                background var(--transition) ease-in-out;
+        background var(--transition) ease-in-out;
 }

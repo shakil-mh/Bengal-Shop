@@ -1,16 +1,15 @@
-
 /* Category section */
 
-.category-area{
+.category-area {
     margin-block-end: 3.75rem;
 }
 
-.category-slider{
+.category-slider {
     padding: 2.5rem 0;
     gap: 1.875rem;
 }
 
-.category-slide{
+.category-slide {
     aspect-ratio: 260/220;
     gap: 1.25rem;
     padding-inline: clamp(10px, 2.3vw, 45px);
@@ -20,15 +19,15 @@
     cursor: pointer;
 }
 
-.category-slide img{
+.category-slide img {
     padding-inline: clamp(15px, 1.8vw, 35px);
 }
 
-.category-slide:hover{
+.category-slide:hover {
     background: var(--gray-color);
 }
 
-.category-slide h4{
+.category-slide h4 {
     font-size: 1.25rem;
     font-weight: 500;
 }

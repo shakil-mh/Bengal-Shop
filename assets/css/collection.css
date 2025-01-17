@@ -1,13 +1,12 @@
-
 /* Collection area */
 
-.collection-area{
+.collection-area {
     display: flex;
     gap: 1.875rem;
     margin-bottom: 6.5625rem;
 }
 
-.collection{
+.collection {
     width: clamp(150px, 32.2%, 550px);
     background: #fff0dc;
     border-radius: 1.25rem;
@@ -18,17 +17,17 @@
     padding-inline: clamp(5px, 1.17%, 20px);
 }
 
-.collection-3{
+.collection-3 {
     background: #ffebb7;
 }
 
-.collection h3{
+.collection h3 {
     font-size: clamp(25px, 1.67vw, 32px);
     color: var(--text-color);
     white-space: nowrap;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
 }
-.collection-details{
+.collection-details {
     padding-left: clamp(0px, 5.9%, 30px);
     display: flex;
     flex-direction: column;
@@ -36,15 +35,15 @@
     height: 100%;
 }
 
-.collection-details button{
+.collection-details button {
     background: white;
     color: var(--text-color-2);
     font-size: 1.25rem;
     transition: background var(--transition) ease-in-out,
-                color var(--transition) ease-in-out;
+        color var(--transition) ease-in-out;
 }
 
-.collection-details button:hover{
+.collection-details button:hover {
     color: white;
     background: var(--green-color);
 }
