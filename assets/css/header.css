@@ -326,6 +326,10 @@
 
 /* Mobile dropdown */
 
+.mobile-menu{
+    font-size: var(--font-size);
+}
+
 .mobile-menu ul {
     overflow-y: scroll;
     height: 100%;
