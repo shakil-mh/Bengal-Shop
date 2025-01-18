@@ -52,18 +52,33 @@
         justify-content: center;
     }
 
-    /* carousel area */
+    /* hero section */
 
-    .carousel-area {
-        min-height: auto;
+    .hero-section {
+        padding: 1.25rem;
+        border-radius: .9375rem;
+        margin-bottom: 4.0625rem;
     }
 
-    .carousel-text-wrapper {
-        width: 100%;
+    .hero-text-wrapper h2 {
+        font-size: clamp(26px, 2.4vw, 32px);
     }
 
-    .carousel-text-wrapper h1 {
-        font-size: 3rem;
+    .hero-text-wrapper h1 {
+        font-size: clamp(34px, 3.15vw, 70px);
+    }
+
+    .hero-text-wrapper p {
+        font-size: clamp(16px, 1.48vw, 22px);
+    }
+
+    .carousel-container {
+        justify-content: center;
+    }
+
+    .carousel{
+        margin: 0;
+        width: 80%;
     }
 
     /* deal area */
@@ -138,6 +153,20 @@
     .menu-top .logo,
     .menu-top .logo img {
         width: 130px;
+    }
+
+    /* hero section */    
+
+    .hero-text-wrapper h2 {
+        font-size: clamp(20px, 2.78vw, 26px);
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: clamp(26px, 3.62vw, 34px);
+    }
+
+    .hero-text-wrapper p {
+        font-size: clamp(14px, 1.95vw, 16px);
     }
 
     /* deal area */
@@ -235,38 +264,46 @@
         gap: 0.3125rem;
     }
 
-    /* carousel area */
+    /* hero section */
 
-    .carousel-area {
-        flex-direction: column-reverse;
-        border-radius: 1rem;
+    .hero-section {
+        padding: 1rem;
         margin-bottom: 2.5rem;
+        flex-direction: column-reverse;
+        gap: 1rem;
     }
 
-    .carousel-text {
-        justify-content: center;
-        padding: 0 1rem 1rem 1rem;
+    .hero-text-wrapper h2{
+        margin-bottom: 1rem;
     }
 
-    .carousel-text-wrapper button {
-        font-size: 1.25rem;
+    .hero-text-wrapper h1{
+        margin-bottom: 1.25rem;
     }
 
-    .carousel-slider {
-        order: 2;
-        justify-content: center;
+    .hero-text-wrapper p{
+        margin-bottom: 1.5rem;
     }
 
-    .carousel-slider img {
-        margin: 1rem 1rem 0 1rem;
+    .hero-text-wrapper button{
+        padding: .5em 1.5em;
     }
 
-    .carousel-.nav {
-        margin: 0 auto;
+    .carousel{
+        max-width: 300px;
+    }
+
+    .carousel-nav{
+        left: 0;
+        top: auto;
+        right: 0;
+        bottom: 1%;
+        transform: translateY(-50%);
         flex-direction: row;
-        margin-block: -1.5rem 2rem;
+        justify-content: center;
+        gap: .8rem;
     }
-
+   
     /* Category area */
 
     .category-area {

@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/header.css" />
-        <link rel="stylesheet" href="assets/css/carusel.css" />
+        <link rel="stylesheet" href="assets/css/hero.css" />
         <link rel="stylesheet" href="assets/css/slider.css" />
         <link rel="stylesheet" href="assets/css/category.css" />
         <link rel="stylesheet" href="assets/css/offers.css" />
@@ -129,9 +129,9 @@
         <div class="mobile-menu"></div>
 
         <div class="main-container">
-            <section class="carousel-area container">
-                <div class="carousel-text">
-                    <div class="carousel-text-wrapper">
+            <section class="hero-section container">
+                <div class="hero-text">
+                    <div class="hero-text-wrapper">
                         <h2>Save up 30% off</h2>
                         <h1>
                             Bengal Vegetable <br />
@@ -144,15 +144,25 @@
                         <button>Shop Now</button>
                     </div>
                 </div>
-                <div class="carousel-slider">
-                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
-                    <img src="assets/images/slide-0.png" alt="" />
-                    <!-- <img src="assets/images/slide-1.png" alt=""> -->
-                </div>
-                <div class="carousel-nav">
-                    <a href="#"></a>
-                    <a  href="#"class="current-slide"></a>
-                    <a href="#"></a>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slider">
+                            <div class="carousel-slide">
+                                <!-- <img src="assets/images/slide-1.png" alt=""> -->
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/slide-0.png" alt="">
+                            </div>
+                            <div class="carousel-slide">
+                                <!-- <img src="assets/images/slide-1.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button></button>
+                        <button class="active-indicator"></button>
+                        <button></button>
+                    </div>
                 </div>
             </section>
 
@@ -620,7 +630,8 @@
             src="https://kit.fontawesome.com/746bd87ac3.js"
             crossorigin="anonymous"
         ></script>
-        <script src="assets/js/slider.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- <script src="assets/js/carousel.js" defer></script> -->
+        <script src="assets/js/slider.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
     </body>
 </html>
