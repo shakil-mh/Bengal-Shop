@@ -64,8 +64,12 @@
 .carousel{
     max-width: 661px;
     aspect-ratio: 661/819;
-    /* background: rgba(0, 0, 0, 0.349); */
     margin: 60px 0 0 0;
+    overflow: hidden;
+}
+
+.carousel-slider{
+    transition: transform .5s ease-in-out;
 }
 
 .carousel-nav{

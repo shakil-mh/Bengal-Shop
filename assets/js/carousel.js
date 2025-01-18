@@ -1,26 +1,30 @@
-const slide = document.querySelector('.carousel-slide');
-const slideItemHeight = slide.children[0].clientHeight;
-slide.style.transform = `translateY(-${slideItemHeight}px)`;
+const slider = document.querySelector('.carousel-slider');
+const slides = document.querySelectorAll('.carousel-slide');
+const slideHeight = slider.children[0].clientHeight;
+const buttons = document.querySelectorAll('.carousel-nav button');
 
-const carouselBtn = document.querySelectorAll(".carousel-nav button");
+slider.style.transform = `translateY(-${slideHeight}px)`;
 
 function goToSlide(index){
-    slide.style.transform = `translateY(-${slideItemHeight * index}px)`;
-    carouselBtn.forEach(button=>{
-        button.classList.remove("current-slide")
-        carouselBtn[index].classList.add("current-slide")
+    slider.style.transform = `translateY(-${slideHeight * [index]}px)`;
+    slides.forEach(slide=>{
+        slide.classList.remove('active-slide');
+        slides[index].classList.add('active-slide');
+    })
+    buttons.forEach(button=>{
+        button.classList.remove('active-indicator');
+        buttons[index].classList.add('active-indicator');
     })
 }
 
-carouselBtn.forEach((btn, i) =>{
-    btn.addEventListener("click",()=> goToSlide(i))
+buttons.forEach((button, i)=>{
+    button.addEventListener('click', ()=> goToSlide(i));
 })
 
-const totalSlide = carouselBtn.length
-let currentSlide = 0
-
 setInterval(()=>{
-    currentSlide = (currentSlide + 1) % totalSlide;
-    // console.log(currentSlide)
-    goToSlide(currentSlide)
-}, 3000)
+    let currentSlide = Array.from(slides).findIndex((slide)=>{
+        return slide.classList.contains('active-slide');
+    })
+    targetSlide = (currentSlide + 1) % slides.length;
+    goToSlide(targetSlide);
+}, 3500)
