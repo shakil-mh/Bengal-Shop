@@ -1,17 +1,14 @@
 //  sticky header area
 
 const header = document.getElementsByClassName("header")[0];
-const logo = document.getElementsByClassName("logo")[0].outerHTML;
-const menu = document.getElementsByClassName("menu-area")[0].outerHTML;
-const account = document.getElementsByClassName("account-area")[0].outerHTML;
+const logo = document.getElementsByClassName("logo")[0].cloneNode(true);
+const menu = document.getElementsByClassName("menu-area")[0].cloneNode(true);
+const account = document.getElementsByClassName("account-area")[0].cloneNode(true);
 const scrollWatcher = document.getElementsByClassName("scroll-watcher")[0];
 
 const observer = new IntersectionObserver((entries) => {
-    header.innerHTML = logo + menu + account;
-    header.parentElement.classList.toggle(
-        "sticking",
-        !entries[0].isIntersecting
-    );
+    header.append(logo, menu, account);
+    header.parentElement.classList.toggle("sticking", !entries[0].isIntersecting);
 });
 
 observer.observe(scrollWatcher);
@@ -21,7 +18,7 @@ observer.observe(scrollWatcher);
 const mobileMenu = document.getElementsByClassName("mobile-menu")[0];
 const menuTop = document.createElement("div");
 menuTop.classList.add("menu-top");
-menuTop.innerHTML = logo + `<i class="fa-solid fa-xmark"></i>`;
+menuTop.innerHTML = logo.outerHTML + `<i class="fa-solid fa-xmark"></i>`;
 const dropdown = document.getElementsByClassName("dropdown");
 const ul = document.createElement("ul");
 ul.innerHTML = `<li>Home<i class="fa-solid fa-caret-down"></i></li>
@@ -67,7 +64,7 @@ menuList.forEach((li) => {
 
         if (li.nextElementSibling.classList.contains("show-dropdown")) {
             li.nextElementSibling.style.height =
-            li.nextElementSibling.scrollHeight + "px";
+                li.nextElementSibling.scrollHeight + "px";
         } else {
             li.nextElementSibling.style.height = 0;
         }

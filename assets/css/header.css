@@ -332,7 +332,7 @@
 
 .mobile-menu ul {
     overflow-y: scroll;
-    height: 100%;
+    height: calc(100% - 4.6rem);
     padding-bottom: 5rem;
 }
 
