@@ -27,6 +27,7 @@
     <body>
         <div class="bg" onclick="hideMenu()"></div>
         <div class="sticky"><div class="header container"></div></div>
+
         <header>
             <div class="header container">
                 <a class="logo" href="index.html"
@@ -63,7 +64,7 @@
                     <span>Account</span>
                 </div>
                 <div class="category-btn">
-                    <button>
+                    <button onclick="showCategory()">
                         <img src="assets/images/ui/menu-right.png" />
                         <span>All Categories</span>
                         <img src="assets/images/ui/chevron-down.png" />
@@ -125,10 +126,77 @@
                 </div>
             </div>
         </header>
+
         <div class="scroll-watcher"></div>
         <div class="mobile-menu"></div>
 
         <div class="main-container">
+            <!-- Category side menu start -->
+            <div class="category-container">
+                <div class="category">
+                    <h3>Categories<i class="fa-solid fa-chevron-down"></i></h3>
+                    <ul class="category-list">
+                        <li><img src="assets/images/ui/icon-vegetable.png" alt="">Vegetables<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-fruits.png" alt="">Fruits<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-groceries.png" alt="">Groceries<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-meat.png" alt="">Meat<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-fish.png" alt="">Fish<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-bevarage.png" alt="">Bevarage<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                        <li><img src="assets/images/ui/icon-dry-food.png" alt="">Dry Food<i class="fa-solid fa-chevron-right"></i></li>
+                        <ul class="category-dropdown">
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                            <a href="#"><li>Placeholder</li></a>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="price-filter">
+                    <h3>Price<i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="price-slider">
+                        <div class="price-range">
+                            <input class="min-input" type="range" min="0" max="1000" value="100" step="10"/>
+                            <input class="max-input" type="range" min="0" max="1000" value="900" step="10"/>
+                            <div class="range-track"><div class="range-fill"></div></div>
+                        </div>
+                        <div class="price-range-value">
+                            <span class="min-price"></span>
+                            <span class="max-price"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category side menu end -->
+
             <section class="hero-section container">
                 <div class="hero-text">
                     <div class="hero-text-wrapper">
@@ -631,6 +699,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="assets/js/carousel.js" defer></script>
+        <script src="assets/js/category.js" defer></script>
         <script src="assets/js/slider.js" defer></script>
         <script src="assets/js/main.js" defer></script>
     </body>

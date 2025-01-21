@@ -3,6 +3,7 @@
     grid-template-columns: repeat(24, 1fr);
     row-gap: 1rem;
     padding: 2.5rem 0 1.875rem 0;
+    z-index: 9;
     grid-template-areas:
         "l l l l l . . s s s s s s s s s s s . a a a a a"
         "c c c c c . . m m m m m m m m m m m . o o o o o";
