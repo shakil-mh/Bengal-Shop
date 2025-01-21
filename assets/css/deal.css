@@ -29,7 +29,7 @@
     right: 0;
     background: rgba(0, 0, 0, 0.4);
     opacity: 0;
-    transition: opacity var(--transition) ease-in-out;
+    transition: opacity var(--transition);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,8 +100,7 @@
     border-radius: 1.875rem;
     background: transparent;
     color: var(--green-color);
-    transition: background var(--transition) ease-in-out color var(--transition)
-        ease-in-out;
+    transition: background var(--transition), color var(--transition);
 }
 
 .deal-slide button:hover {

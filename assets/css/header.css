@@ -90,7 +90,7 @@
     font-size: var(--font-size);
     background-color: var(--deep-gray-color);
     color: white;
-    transition: background-color var(--transition) ease-in-out;
+    transition: background-color var(--transition);
 }
 
 .search-area form button:hover {
@@ -192,7 +192,7 @@
     font-size: var(--font-size);
     color: var(--deep-gray-color);
     padding-bottom: 0.875rem;
-    transition: color var(--transition) ease-in-out;
+    transition: color var(--transition);
     background: transparent;
     display: flex;
     position: relative;
@@ -241,8 +241,8 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out,
-        transform 0.1s ease-in-out;
+    transition: opacity var(--transition), visibility var(--transition),
+        transform var(--transition);
 }
 
 .dropdown a,
@@ -279,7 +279,7 @@
     z-index: 999999999999999999999999999;
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    transition: transform var(--transition), opacity var(--transition);
 }
 
 .mobile-menu-active {

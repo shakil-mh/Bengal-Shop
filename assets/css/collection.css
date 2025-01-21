@@ -39,8 +39,7 @@
     background: white;
     color: var(--text-color-2);
     font-size: 1.25rem;
-    transition: background var(--transition) ease-in-out,
-        color var(--transition) ease-in-out;
+    transition: background var(--transition), color var(--transition);
 }
 
 .collection-details button:hover {

@@ -3,7 +3,7 @@ const slides = document.querySelectorAll('.carousel-slide');
 const slideHeight = slider.children[0].clientHeight;
 const buttons = document.querySelectorAll('.carousel-nav button');
 
-slider.style.transform = `translateY(-${slideHeight}px)`;
+// slider.style.transform = `translateY(-${slideHeight}px)`;
 
 function goToSlide(index){
     slider.style.transform = `translateY(-${slideHeight * [index]}px)`;

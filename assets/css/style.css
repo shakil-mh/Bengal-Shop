@@ -46,7 +46,7 @@ button {
     --text-color: #333333;
     --text-color-2: #ff5c00;
     --font-size: 1.125rem;
-    --transition: 0.1s;
+    --transition: 0.1s ease-in-out;
 }
 
 .btn {

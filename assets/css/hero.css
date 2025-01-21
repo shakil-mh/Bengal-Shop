@@ -52,6 +52,12 @@
     max-width: min-content;
     white-space: nowrap;
     border-radius: 100px;
+    transition: background var(--transition);
+}
+
+.hero-text-wrapper button:hover{
+    background: var(--deep-gray-color);
+    color: white;
 }
 
 .carousel-container{
@@ -87,6 +93,8 @@
     aspect-ratio: 1;
     border-radius: 10px;
     background: #999999;
+    transition: background .5s ease-in-out,
+                box-shadow .5s ease-in-out;
 }
 
 .active-indicator{

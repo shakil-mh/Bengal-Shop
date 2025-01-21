@@ -42,8 +42,8 @@
     color: var(--text-color-2);
     font-size: 1.125rem;
     font-weight: 500;
-    transition: background var(--transition) ease-in-out,
-        color var(--transition) ease-in-out;
+    transition: background var(--transition),
+        color var(--transition);
 }
 
 .offer-text button:hover {

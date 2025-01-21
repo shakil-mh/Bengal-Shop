@@ -72,6 +72,6 @@
     transform: rotateX(180deg);
     -ms-transform: rotateX(180deg); /* IE 9 */
     -webkit-transform: rotateX(180deg); /* Safari and Chrome */
-    transition: box-shadow var(--transition) ease-in-out,
-        background var(--transition) ease-in-out;
+    transition: box-shadow var(--transition),
+        background var(--transition);
 }

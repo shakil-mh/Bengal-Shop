@@ -46,7 +46,7 @@ footer {
 
 .link li {
     font-size: 18px;
-    transition: color var(--transition) ease-in-out;
+    transition: color var(--transition);
     margin-top: 1.5625rem;
 }
 
@@ -86,8 +86,8 @@ footer {
     font-size: 28px;
     color: var(--deep-gray-color);
     cursor: pointer;
-    transition: background var(--transition) ease-in-out,
-        color var(--transition) ease-in-out;
+    transition: background var(--transition),
+        color var(--transition);
 }
 
 .media i:hover {
