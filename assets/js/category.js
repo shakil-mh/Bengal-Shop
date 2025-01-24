@@ -13,7 +13,15 @@ categoryLists.forEach(link => {
 })
 
 // Show category side menu
-showCategory = () => {categoryContainer.classList.toggle('show-category')}
+
+document.addEventListener('click', (e) => {
+    const isCategoryBtn = e.target.closest('.category-btn button') != null;
+    const isCategoryContainer = e.target.closest('.category-container') != null;
+
+    if(isCategoryBtn) categoryContainer.classList.toggle('show-category');
+    if(!isCategoryBtn && !isCategoryContainer) categoryContainer.classList.remove('show-category');
+})
+
 
 // Update range fill
 const minInput = document.querySelector('.min-input');

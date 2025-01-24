@@ -296,7 +296,11 @@
     }
 
     .category-list li img{
-        width: 10%;
+        width: 12%;
+    }
+
+    .category-dropdown {
+        padding-left: 2.875rem;
     }
 
     /* hero section */
